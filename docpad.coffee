@@ -2,6 +2,7 @@
 # http://docpad.org/docs/config
 
 # Define the DocPad Configuration
+# http://learn.bevry.me/queryengine/guide#-beginswith-aka-startswith-
 docpadConfig = {
 	templateData:
 		site:
@@ -10,8 +11,9 @@ docpadConfig = {
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 
 	collections:
-		pages: -> @getCollection("html").findAllLive({isPage:true}).on "add", (model) -> model.setMetaDefaults({layout:"default"})
-		posts: -> @getCollection("html").findAllLive({post:true})
+		pages: -> @getCollection("html").findAllLive({title: $exists: true}).on "add", (model) -> model.setMetaDefaults({layout:"default"})
+		nav: -> @getCollection("html").findAllLive({nav: $exists: true})
+		posts: -> @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:-1}])
 
 	plugins:
 		plugins:

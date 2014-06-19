@@ -1,6 +1,6 @@
 ---
-title: "Welcome!- About Me"
-isPage: true
+title: "About Me"
+nav: "About Me"
 ---
 
 # About Me
