@@ -7,7 +7,7 @@ layout: page
     <aside class="right">
       <div class="pic"><img alt="" src="http://0.gravatar.com/avatar/06b1e54f6cf9b623648c8e0621b61fed?s=50&amp;d=retro&amp;r=X" class="avatar avatar-50 photo" height="50" width="50"></div>
     </aside>
-    <h3><a href="http://www.thomasvjames.com/2014/05/game-of-life-as-an-i386-kernel/" rel="bookmark" title="Permanent Link to Game of Life as an i386 kernel">Game of Life as an i386 kernel</a></h3>
+    <h3><a href="http://www.thomasvjames.com/2014/05/game-of-life-as-an-i386-kernel/" rel="bookmark" title="Permanent Link to Game of Life as an i386 kernel"><%= @document.title %></a></h3>
     <small><time pubdate datetime="2009-10-09">9th October, 2009</time></small>
     <small>by <a href="http://www.thomasvjames.com/author/tvjames/" title="Posts by Thomas James" rel="author">Thomas James</a></small>
   </header>

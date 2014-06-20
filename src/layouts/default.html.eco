@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="<%- @site.url %>/js/vendor/modernizr.js"></script>
 
     <title><%= @getPreparedTitle() %></title>
 
     <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").toHTML() %>
+    <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
 
-    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
 
@@ -102,12 +99,10 @@
       </div>
     </div>
 
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <%- @getBlock('scripts').add(@site.scripts or [], {defer:false, async:false}).add(@document.scripts or [], {defer:false, async:false}).toHTML() %>
     <script>
       $(document).foundation();
     </script>
-    <%- @getBlock("scripts").toHTML() %>
+
   </body>
 </html>
