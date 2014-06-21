@@ -21,10 +21,19 @@ layout: null
         Categories:
         <a href="http://www.thomasvjames.com/category/development/" title="View all posts in Development" rel="category tag">Development</a>,
         <a href="http://www.thomasvjames.com/category/linux-open-source/" title="View all posts in Linux &amp; Open Source" rel="category tag">Linux &amp; Open Source</a>.
-        Tags:
-        <a href="http://www.thomasvjames.com/tag/kernel/" rel="tag">kernel</a>.
+
       </small>
     </p>
+    <% if @data.tags?.length: %>
+      <section class="tags postmetadata">
+        <small>Tags:
+          <ul class="inline-list">
+            <li class="heading">Tags: </li>
+            <% for tag in @data.tags: %><li><a href="<%- @getPreparedTagUrl(tag) %>" rel="tag"><%= tag %></a></li><% end %>
+          </ul>
+        </small>
+      </section>
+    <% end %>
 
     <p class="postmetadata">
       <small>

@@ -26,6 +26,7 @@ docpadConfig = {
 					email: "thomasvjames@gmail.com"
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 		getAuthor: (author) -> @site.authors[author]
 		getGravatarUrl: (email, size, type, rating) ->
@@ -47,8 +48,12 @@ docpadConfig = {
 			collection = @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:-1}])
 			collection.on "add", (model) ->
 				model.setMetaDefaults({active: "Archive", author: "tvjames"})
+		cleanurls: (database) ->
+			database.findAllLive() #({$or: {layout: {$exists: true}, layout: {$exists: true} }})
 
 	plugins:
+		cleanurls:
+			collectionName: 'cleanurls'
 		moment:
 			formats: [
 				{raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
@@ -66,6 +71,19 @@ docpadConfig = {
 			aliases: {
 				'/rss.xml': '/feed/index.html'
 			}
+		tags:
+			relativeDirPath: 'tag'
+			extension: '.html.eco'
+			injectDocumentHelper: (document) ->
+				document.setMeta(
+					#filename: document.get("id") #now we're getting somewhere
+					#url: "tag/" + document.get("id")
+					layout: 'page'
+					data: """
+						<%- @partial('tag', @) %>
+						"""
+				)
+
 }
 
 # Export the DocPad Configuration
