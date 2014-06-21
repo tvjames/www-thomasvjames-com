@@ -2,20 +2,4 @@
 layout: page
 ---
 
-<article>
-  <header class="clearfix">
-    <aside class="right">
-      <div class="pic"><img alt="" src="http://0.gravatar.com/avatar/06b1e54f6cf9b623648c8e0621b61fed?s=50&amp;d=retro&amp;r=X" class="avatar avatar-50 photo" height="50" width="50"></div>
-    </aside>
-    <h3><a href="http://www.thomasvjames.com/2014/05/game-of-life-as-an-i386-kernel/" rel="bookmark" title="Permanent Link to Game of Life as an i386 kernel"><%= @document.title %></a></h3>
-    <small><time pubdate datetime="2009-10-09">9th October, 2009</time></small>
-    <small>by <a href="http://www.thomasvjames.com/author/tvjames/" title="Posts by Thomas James" rel="author">Thomas James</a></small>
-  </header>
-  <section>
-    <%- @content %>
-  </section>
-  <footer>
-    <p class="postmetadata"><small>Posted at 9:58 pm on May 21st, 2014.  <a href="http://www.thomasvjames.com/2014/05/game-of-life-as-an-i386-kernel/#respond" title="Comment on Game of Life as an i386 kernel">No comments... »</a>        <br>
-      Categories: <a href="http://www.thomasvjames.com/category/development/" title="View all posts in Development" rel="category tag">Development</a>, <a href="http://www.thomasvjames.com/category/linux-open-source/" title="View all posts in Linux &amp; Open Source" rel="category tag">Linux &amp; Open Source</a>.             Tags: <a href="http://www.thomasvjames.com/tag/kernel/" rel="tag">kernel</a>.       </small>  </p>
-  </footer>
-</article>
+<%- @partial('post', {content: @content, data: @document}) %>

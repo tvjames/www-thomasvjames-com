@@ -7,6 +7,12 @@ date: 2013-11-18 11:58:20+00:00
 layout: page
 slug: stuff-i-like
 wordpress_id: 327
+sections:
+  - title: aside
+    links:
+      - text: testing
+        alt: abc testing
+        url: abc
 ---
 
 ### Kickstarter

@@ -16,10 +16,14 @@
     "docpad-plugin-gist": "~2.1.1",
     "docpad-plugin-highlightjs": "~2.2.2",
     "docpad-plugin-livereload": "~2.6.0",
+    "docpad-plugin-lunr": "~2.0.8",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-moment": "~2.0.2",
+    "docpad-plugin-partials": "~2.9.1",
+    "docpad-plugin-related": "~2.2.2",
     "docpad-plugin-rss": "~2.0.1",
-    "docpad-plugin-sunny": "~2.1.0"
+    "docpad-plugin-sunny": "~2.1.0",
+    "docpad-plugin-tags": "~2.0.7"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

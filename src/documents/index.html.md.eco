@@ -1,11 +1,10 @@
 ---
-title: "Welcome"
+title: "Latest Posts"
 layout: page
 ---
 
-<% for post in @getCollection("posts").toJSON().slice(0, 3): %>
-<li>
-  <a href="<%= post.url %>" title="<%= post.title %>"><%= post.title %>
-  </a>
-</li>
+# Latest Posts
+
+<% for post in @getCollection("posts").first(3): %>
+  <%- @partial('post', {content: post.get('contentRenderedWithoutLayouts') or "**testing**", data: post.toJSON()}) %>
 <% end %>

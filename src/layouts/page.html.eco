@@ -13,10 +13,16 @@ layout: default
         <img style="margin-left: 0;" src="http://stackexchange.com/users/flair/8683affb512d4853afd662a6ea976454.png" width="208" height="58" alt="profile for Thomas James on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Thomas James on Stack Exchange, a network of free, community-driven Q&amp;A sites">
       </a>
     </section>
+    <% for section in [].concat(@site.sections or [], @document.sections or []): %>
     <section>
-      <h3>Fucked</h3>
-      <p>fjjjjfjfjfjfj</p>
+      <ul class="side-nav">
+        <li class="heading"><%= section.title %></li>
+        <% for link in section.links: %>
+        <li><a href="<%- link.href %>" title="<%= link.alt %>"><%= link.text %></a></li>
+        <% end %>
+      </ul>
     </section>
+    <% end %>
     <section>
       <h3>Tags</h3>
       <p>fjjjjfjfjfjfj</p>

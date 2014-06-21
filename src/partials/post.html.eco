@@ -1,0 +1,35 @@
+---
+layout: null
+---
+<% author = @getAuthor(@data.author) %>
+
+<article>
+  <header class="clearfix">
+    <aside class="right">
+      <div class="pic"><img alt="Gravatar for <%= author.name %>" src="<%- @getGravatarUrl(author.email, 50, 'retro', 'X') %>" class="avatar avatar-50 photo" height="50" width="50"></div>
+    </aside>
+    <h3><a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a></h3>
+    <small><time pubdate datetime="<%= @moment(@data.date).toISOString() %>" title="<%= @moment(@data.date).toISOString() %>"><%= @moment(@data.date).format("LLLL ZZ") %></time></small>
+    <small>by <a href="http://www.thomasvjames.com/author/tvjames/" title="Posts by <%= author.name %>" rel="author"><%= author.name %></a></small>
+  </header>
+  <section>
+    <%- @content or "Error: missing content" %>
+  </section>
+  <footer>
+    <p class="postmetadata">
+      <small>
+        Categories:
+        <a href="http://www.thomasvjames.com/category/development/" title="View all posts in Development" rel="category tag">Development</a>,
+        <a href="http://www.thomasvjames.com/category/linux-open-source/" title="View all posts in Linux &amp; Open Source" rel="category tag">Linux &amp; Open Source</a>.
+        Tags:
+        <a href="http://www.thomasvjames.com/tag/kernel/" rel="tag">kernel</a>.
+      </small>
+    </p>
+
+    <p class="postmetadata">
+      <small>
+        <a href="#respond" title="Comment on <%= @data.title %>">No comments... »</a>
+      </small>
+    </p>
+  </footer>
+</article>

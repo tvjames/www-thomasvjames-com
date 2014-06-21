@@ -15,14 +15,38 @@ docpadConfig = {
 				"/js/vendor/jquery.js",
 				"/js/foundation.min.js"
 			]
+			sections: [
+				{title: "links", links: [
+					{text: "Photography", alt: "Photography", href: "http://www.thomasvjames.com/photography"}
+				]}
+			]
+			authors:
+				tvjames:
+					name: "Thomas James"
+					email: "thomasvjames@gmail.com"
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
+		getAuthor: (author) -> @site.authors[author]
+		getGravatarUrl: (email, size, type, rating) ->
+			hash = require('crypto').createHash('md5').update(email).digest('hex')
+			url = "//www.gravatar.com/avatar/#{hash}?"
+			if size then url += "s=#{size}&"
+			if type then url += "d=#{type}&"
+			if rating then url += "r=#{rating}"
+			return url
 
 	collections:
-		pages: -> @getCollection("html").findAllLive({title: $exists: true}).on "add", (model) -> model.setMetaDefaults({layout:"default"})
-		nav: -> @getCollection("html").findAllLive({nav: $exists: true},[{filename:1}])
-		posts: -> @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:-1}])
+		pages: ->
+			collection = @getCollection("html").findAllLive({title: $exists: true})
+			collection.on "add", (model) ->
+					model.setMetaDefaults({layout:"default"})
+		nav: ->
+			@getCollection("html").findAllLive({nav: $exists: true},[{filename:1}])
+		posts: ->
+			collection = @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:-1}])
+			collection.on "add", (model) ->
+				model.setMetaDefaults({active: "Archive", author: "tvjames"})
 
 	plugins:
 		moment:
@@ -37,6 +61,11 @@ docpadConfig = {
 			default:
 				collection: 'posts'
 				url: '/rss.xml' # optional, this is the default
+		alias:
+			hard: false
+			aliases: {
+				'/rss.xml': '/feed/index.html'
+			}
 }
 
 # Export the DocPad Configuration
