@@ -17,6 +17,7 @@ docpadConfig = {
 			]
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 
 	collections:
 		pages: -> @getCollection("html").findAllLive({title: $exists: true}).on "add", (model) -> model.setMetaDefaults({layout:"default"})

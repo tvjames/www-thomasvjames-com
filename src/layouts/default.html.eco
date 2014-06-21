@@ -46,7 +46,7 @@
                 <!-- Left Nav Section -->
                 <ul class="left">
                   <% for page in @getCollection("nav").toJSON(): %>
-                    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                    <li class="<%= @getNavClass(page) %>">
                       <a href="<%= page.url %>"><%= page.nav %></a>
                     </li>
                   <% end %>

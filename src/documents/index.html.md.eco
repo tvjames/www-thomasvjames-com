@@ -1,25 +1,11 @@
 ---
-title: "fjfjfj"
+title: "Welcome"
 layout: page
 ---
 
-<% for post in @getCollection("posts").toJSON(): %>
+<% for post in @getCollection("posts").toJSON().slice(0, 3): %>
 <li>
   <a href="<%= post.url %>" title="<%= post.title %>"><%= post.title %>
   </a>
 </li>
 <% end %>
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>        <hr />
-
-            <p>Main content</p>
