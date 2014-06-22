@@ -16,14 +16,17 @@ layout: null
     <%- @content or "Error: missing content" %>
   </section>
   <footer>
-    <p class="postmetadata">
-      <small>
-        Categories:
-        <a href="http://www.thomasvjames.com/category/development/" title="View all posts in Development" rel="category tag">Development</a>,
-        <a href="http://www.thomasvjames.com/category/linux-open-source/" title="View all posts in Linux &amp; Open Source" rel="category tag">Linux &amp; Open Source</a>.
+    <% if @data.categories?.length: %>
+      <section class="categories postmetadata">
+        <small>
+          <ul class="inline-list">
+            <li class="heading">Categories: </li>
+            <% for category in @data.categories: %><li><%= category %></li><% end %>
+          </ul>
+        </small>
+      </section>
+    <% end %>
 
-      </small>
-    </p>
     <% if @data.tags?.length: %>
       <section class="tags postmetadata">
         <small>
