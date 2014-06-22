@@ -58,7 +58,7 @@
                   <li><a href="https://twitter.com/thomasvjames"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://github.com/tvjames"><i class="fa fa-github"></i></a></li>
                   <li class="name">
-                    <h1><a href="#">thomasvjames.com</a></h1>
+                    <h1><a href="<%- @site.url %>">thomasvjames.com</a></h1>
                   </li>
                 </ul>
 
