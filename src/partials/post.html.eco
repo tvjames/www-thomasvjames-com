@@ -10,7 +10,7 @@ layout: null
     </aside>
     <h3><a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a></h3>
     <small><time pubdate datetime="<%= @moment(@data.date).toISOString() %>" title="<%= @moment(@data.date).toISOString() %>"><%= @moment(@data.date).format("LLLL ZZ") %></time></small>
-    <small>by <a href="http://www.thomasvjames.com/author/tvjames/" title="Posts by <%= author.name %>" rel="author"><%= author.name %></a></small>
+    <small>by <a href="<%- author.href(@site) %>" title="Posts by <%= author.name %>" rel="author"><%= author.name %></a></small>
   </header>
   <section>
     <%- @content or "Error: missing content" %>
@@ -26,7 +26,7 @@ layout: null
     </p>
     <% if @data.tags?.length: %>
       <section class="tags postmetadata">
-        <small>Tags:
+        <small>
           <ul class="inline-list">
             <li class="heading">Tags: </li>
             <% for tag in @data.tags: %><li><a href="<%- @getPreparedTagUrl(tag) %>" rel="tag"><%= tag %></a></li><% end %>

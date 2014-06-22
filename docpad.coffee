@@ -24,6 +24,7 @@ docpadConfig = {
 				tvjames:
 					name: "Thomas James"
 					email: "thomasvjames@gmail.com"
+					href: (site) -> site.url + "/about"
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
