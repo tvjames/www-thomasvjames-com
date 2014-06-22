@@ -38,7 +38,7 @@ layout: null
       </section>
     <% end %>
 
-    <% if not @sumaryOnly: %>
+    <% if (not @sumaryOnly) and (not @data.commentsDisabled): %>
       <p class="postmetadata">
         <div id="disqus_thread"></div>
       </p>

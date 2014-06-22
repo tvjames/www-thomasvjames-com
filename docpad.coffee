@@ -34,6 +34,8 @@ docpadConfig = {
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 		getPreparedDisqusUrl: -> @production.url + @document.url
 		getPreparedDisqusShortname: -> @site.disqus.shortname
+		getPreparedRssUrl: -> @site.url + '/rss.xml'
+		getPreparedEmail: -> "mailto:#{@site.authors.tvjames.email}"
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 		getAuthor: (author) -> @site.authors[author]
