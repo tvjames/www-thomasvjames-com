@@ -9,6 +9,7 @@
 
     <%- @getBlock("meta").toHTML() %>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/default.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro" type='text/css'>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
     <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>

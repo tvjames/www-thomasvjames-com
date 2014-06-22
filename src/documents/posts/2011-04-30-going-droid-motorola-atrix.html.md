@@ -23,26 +23,15 @@ I've bought the phone for a few reasons:
 5. Awesome specs
 
 The phone, Atrix, has some awesome specs for a mobile device:
-
-
   * Really high res display, 4.0-in.; qHD (960 x 540)
-
-
   * All sorts of connectivity options, media dock, netbook thing ,HDMI out
-
-
   * **1Ghz DUAL CORE cpu**
-
-
   * ****nVidia Tegra2 gpu
-
-
   * 1Gb System RAM
+
 Reading through the system specs once I had the phone setup and seeing the "SMP" flags in the kernel version brought back an old feeling of joy and intrigue from when i setup my first dual cpu system which i was in high school, a dual P3 933Mhz SMP system. **The phone is more powerful then that computer now**, of the face of clock speed alone, some 12 years later. Wow, I'm getting old.
 
 Now my journey begins getting used to the Android way of doing things, but on first impressions alone, I'm sold. Having my google account integrated with everything is a massive plus for me.
-
-<!-- more -->
 
 And for those of you into unboxings:
 

@@ -20,8 +20,9 @@ This sounded fantastic, just what I needed. The fabfiles need to be written in p
 
 Installation of fabric on OS X couldnt be easier, just drop into the terminal and run the following:
 
-    <code>sudo easy_install fabric
-    </code>
+```
+sudo easy_install fabric
+```
 
 Which will make use of python's package manager to grab the latest copy of fabric, as well as anything it needs and install it for you.
 
@@ -29,15 +30,17 @@ Which will make use of python's package manager to grab the latest copy of fabri
 
 Once you've got fabric installed, fire up your favorite text editor and create a fabfile.py in which you can define your tasks. I choose to use the task annotation so mine look something like:
 
-    <code>@task
-    def nsreload():
-        sudo("rndc reload")
-    </code>
+```
+@task
+def nsreload():
+    sudo("rndc reload")
+```
 
 Which i can execute like so:
 
-    <code>fab --hosts=localhost nsreload
-    </code>
+```
+fab --hosts=localhost nsreload
+```
 
 If, like me, you've configured private-key based authentication for ssh this is a password-less, repeatable and easy way to run defined commands on a remote host. You might need to enter your password for sudo.
 
@@ -45,8 +48,9 @@ If, like me, you've configured private-key based authentication for ssh this is 
 
 Taking this a bit further it allows me to, given a fresh install of debian 6 minimal run a single command which will bootstrap the VPS to my desired initial (safe) configuration ready to be used.
 
-    <code>fab hostname bootstrap
-    </code>
+```
+fab hostname bootstrap
+```
 
 Which does all of the following:
 

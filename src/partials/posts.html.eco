@@ -4,7 +4,7 @@ layout: null
 
 <ul class="side-nav">
 <% year = -1 %>
-<% for post in @data.query().sortCollection([{date: -1}]).toJSON(): %>
+<% for post in @data.sortCollection([{date: -1}]).toJSON(): %>
 <%   date = @moment(post.date).utc() %>
 <%   if date.year() != year: %>
 <%   year = date.year() %>

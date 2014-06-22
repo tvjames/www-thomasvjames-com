@@ -35,40 +35,42 @@ To get started you'll need an additional fabric file with command commands. Grab
 
 **system.py:**
 
-    <code>from fabric.api import *
+```
+from fabric.api import *
 
-    def run_or_sudo(command):
-        if (env.user == 'root'):
-            run(command)
-        else:
-            sudo(command)
+def run_or_sudo(command):
+    if (env.user == 'root'):
+        run(command)
+    else:
+        sudo(command)
 
-    @task
-    def install(name, source=None):
-        if (source is None):
-            run_or_sudo('apt-get install %s' % name)
-        else:
-            run_or_sudo('apt-get -t %s install %s' % (source, name))
-    </code>
+@task
+def install(name, source=None):
+    if (source is None):
+        run_or_sudo('apt-get install %s' % name)
+    else:
+        run_or_sudo('apt-get -t %s install %s' % (source, name))
+```
 
 **fabfile.py:**
 
-    <code>@task
-    def build_and_deploy_mono(version='', prefix=''):
-        if (version == ''):
-            version = '2.10.9'
-        if (prefix == ''):
-            prefix='/opt/mono-{version}'.format(version=version)
-        system.install('build-essential bison gettext pkg-config')
-        run('wget http://download.mono-project.com/sources/mono/mono-{version}.tar.bz2'.format(version=version))
-        run('tar xjvf mono-{version}.tar.bz2'.format(version=version))
-        with cd('mono-{version}/'.format(version=version)):
-            run('./configure --with-xen_opt=yes --prefix={prefix}'.format(prefix=prefix))
-            run('make')
-            system.run_or_sudo('make install')
-        print(yellow('mono {version} installed into {prefix}'.format(version=version,prefix=prefix)))
-        return prefix
-    </code>
+```
+@task
+def build_and_deploy_mono(version='', prefix=''):
+    if (version == ''):
+        version = '2.10.9'
+    if (prefix == ''):
+        prefix='/opt/mono-{version}'.format(version=version)
+    system.install('build-essential bison gettext pkg-config')
+    run('wget http://download.mono-project.com/sources/mono/mono-{version}.tar.bz2'.format(version=version))
+    run('tar xjvf mono-{version}.tar.bz2'.format(version=version))
+    with cd('mono-{version}/'.format(version=version)):
+        run('./configure --with-xen_opt=yes --prefix={prefix}'.format(prefix=prefix))
+        run('make')
+        system.run_or_sudo('make install')
+    print(yellow('mono {version} installed into {prefix}'.format(version=version,prefix=prefix)))
+    return prefix
+```
 
 Its pretty self-explanatory, but the task _build_and_deploy_mono_ does the following:
 * Sets the version & installation prefix
@@ -80,33 +82,36 @@ Its pretty self-explanatory, but the task _build_and_deploy_mono_ does the follo
 
 You can run the above from the command line on your local machine as, using the defaults:
 
-    <code>$ fab --host=remote-host build_and_deploy_mono
-    </code>
+```
+$ fab --host=remote-host build_and_deploy_mono
+```
 
 Next we're going to need to download, build and install XSP, to do this append the following to your "fabfile.py".
 
 **fabfile.py:**
 
-    <code>@task
-    def build_and_deploy_mono_xsp(prefix, version=''):
-        if (version == ''):
-            version = '2.10.2'
-        #if (prefix == ''):
-        #   prefix='{mono}-xsp-{version}'.format(mono=mono_prefix,version=version)
-        run('wget http://download.mono-project.com/sources/xsp/xsp-{version}.tar.bz2'.format(version=version))
-        run('tar xjvf xsp-{version}.tar.bz2'.format(version=version))
-        with cd('xsp-{version}'.format(version=version)):
-            run('PATH={prefix}/bin:$PATH PKG_CONFIG_PATH={prefix}/lib/pkgconfig/:$PKG_CONFIG_PATH ./configure --prefix={prefix}'.format(prefix=prefix))
-            run('make')
-            system.run_or_sudo('make install')
-        print(yellow('mono-xsp {version} installed into {prefix}'.format(version=version,prefix=prefix)))
-        return prefix
-    </code>
+```
+@task
+def build_and_deploy_mono_xsp(prefix, version=''):
+    if (version == ''):
+        version = '2.10.2'
+    #if (prefix == ''):
+    #   prefix='{mono}-xsp-{version}'.format(mono=mono_prefix,version=version)
+    run('wget http://download.mono-project.com/sources/xsp/xsp-{version}.tar.bz2'.format(version=version))
+    run('tar xjvf xsp-{version}.tar.bz2'.format(version=version))
+    with cd('xsp-{version}'.format(version=version)):
+        run('PATH={prefix}/bin:$PATH PKG_CONFIG_PATH={prefix}/lib/pkgconfig/:$PKG_CONFIG_PATH ./configure --prefix={prefix}'.format(prefix=prefix))
+        run('make')
+        system.run_or_sudo('make install')
+    print(yellow('mono-xsp {version} installed into {prefix}'.format(version=version,prefix=prefix)))
+    return prefix
+```
 
 And at the command line we can install it like so:
 
-    <code>$ fab --host=remote-host build_and_deploy_mono_xsp:mono_prefix=/opt/mono-2.10.9
-    </code>
+```
+$ fab --host=remote-host build_and_deploy_mono_xsp:mono_prefix=/opt/mono-2.10.9
+```
 
 The command is similar to the mono install, but this time we're passing in an argument that allows the XSP task to know where mono was installed.
 
@@ -119,31 +124,33 @@ I was originally going to setup XSP in its own prefix, but this proved troubleso
 
 You can test that both mono and xsp are installed and operational with the following commands, run from the console of the remote server:
 
-    <code>$ /opt/mono-2.10.9/bin/mono --version
-    $ PATH=/opt/mono-2.10.9/bin:$PATH /opt/mono-2.10.9/bin/xsp4
-    </code>
+```
+$ /opt/mono-2.10.9/bin/mono --version
+$ PATH=/opt/mono-2.10.9/bin:$PATH /opt/mono-2.10.9/bin/xsp4
+```
 
 You should see output similar to:
 
-    <code>$ /opt/mono-2.10.9/bin/mono --version
-    Mono JIT compiler version 2.10.9 (tarball Sun Jul  8 08:31:04 UTC 2012)
-    Copyright (C) 2002-2011 Novell, Inc, Xamarin, Inc and Contributors. www.mono-project.com
-        TLS:           __thread
-        SIGSEGV:       altstack
-        Notifications: epoll
-        Architecture:  amd64
-        Disabled:      none
-        Misc:          softdebug
-        LLVM:          supported, not enabled.
-        GC:            Included Boehm (with typed GC and Parallel Mark)
+```
+$ /opt/mono-2.10.9/bin/mono --version
+Mono JIT compiler version 2.10.9 (tarball Sun Jul  8 08:31:04 UTC 2012)
+Copyright (C) 2002-2011 Novell, Inc, Xamarin, Inc and Contributors. www.mono-project.com
+    TLS:           __thread
+    SIGSEGV:       altstack
+    Notifications: epoll
+    Architecture:  amd64
+    Disabled:      none
+    Misc:          softdebug
+    LLVM:          supported, not enabled.
+    GC:            Included Boehm (with typed GC and Parallel Mark)
 
-    $ PATH=/opt/mono-2.10.9/bin:$PATH /opt/mono-2.10.9/bin/xsp4
-    xsp4
-    Listening on address: 0.0.0.0
-    Root directory: /home/tvjames
-    Listening on port: 8080 (non-secure)
-    Hit Return to stop the server.
-    </code>
+$ PATH=/opt/mono-2.10.9/bin:$PATH /opt/mono-2.10.9/bin/xsp4
+xsp4
+Listening on address: 0.0.0.0
+Root directory: /home/tvjames
+Listening on port: 8080 (non-secure)
+Hit Return to stop the server.
+```
 
 Good luck!
 

@@ -31,21 +31,22 @@ The research took me to a pretty obvious place, implement the sequence number pr
 
 Within a single application the implementation of the solution becomes pretty simple
 
-    <code>public class Counter
+```
+public class Counter
+{
+    private long _counter = 0;
+
+    public Counter(long seed)
     {
-        private long _counter = 0;
-
-        public Counter(long seed)
-        {
-            this._counter = seed;
-        }
-
-        public long NextValue()
-        {
-            return Interlocked.Increment(ref this._counter);
-        }
+        this._counter = seed;
     }
-    </code>
+
+    public long NextValue()
+    {
+        return Interlocked.Increment(ref this._counter);
+    }
+}
+```
 
 The next problem is then persisting the value of the counter. Depending on the solution this could either be performed with some sort of journalling system that proxies the counter, or simply persisting the value to a text file that is read on startup.
 

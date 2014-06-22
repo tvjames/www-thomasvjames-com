@@ -31,25 +31,11 @@ Not wanting to repeat the fun of keeping a git and hg repo in sync i started loo
 
 I did run into a few problems repeating the process with appharbor using hg-git to push to the repo, but thankfully hg-git allows you to export the hg change-sets in git format which allowed me to use the normal git tools, less than idea but still pretty painless. AppHarbor however does run your solutions tests (multiple frameworks supported) and have a few other interesting features at the moment including configuration variables, cname support and collaboration.
 
-<blockquote>
-
->
 > [Unwind](http://srvd.in/) privately hosted vps running debian linux and custom built mono-2.8 with patches
->
->
 
-
->
 > [Unwind on DeployFu](http://unwind.deployfu.com/)
->
->
 
-
->
 > [Unwind on AppHarbor](http://unwind.apphb.com/)
->
->
-</blockquote>
 
 Finally keeping the spirit of the cloud the source is hosted on [BitBucket](https://bitbucket.org/).
 

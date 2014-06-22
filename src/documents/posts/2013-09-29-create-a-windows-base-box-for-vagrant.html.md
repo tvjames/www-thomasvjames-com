@@ -27,7 +27,11 @@ You will need the latest versions of the following installed as well:
 
 The Hyper-V VHD unfortunately doesn't work as-is with the default VirtualBox setting used when creating a new VM, so use the following bash script to setup the needed VirtualBox VM. The main change required is connecting the VHD to an IDE Controller not the default SATA one the wizard will create.
 
-Save the above gist locally as `virtualbox.sh` in the directory you want to use as your working folder, the do the following:
+<gist>tvjames/6750255?file=Vagrantfile</gist>
+
+<gist>tvjames/6750255?file=virtualbox.sh</gist>
+
+Save the gist locally as `virtualbox.sh` in the directory you want to use as your working folder, the gist will do the following:
 
   * Boot VM via ./virtualbox.sh script (note, only tested on a mac)
   * Login as Administrator/Pass@word1
@@ -37,8 +41,9 @@ Save the above gist locally as `virtualbox.sh` in the directory you want to use 
   * Install the VirtualBox Guest Additions
   * Run the vagrant_prepare.ps1 gist from the command shell
 
-    <code>@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://gist.github.com/tvjames/6750255/raw/33f3a553663b6b6ace77f1eb11ee23d4c58449fd/vagrant_prepare.ps1'))"
-    </code>
+```
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://gist.github.com/tvjames/6750255/raw/33f3a553663b6b6ace77f1eb11ee23d4c58449fd/vagrant_prepare.ps1'))"
+```
 
 Once the preparation script is complete:
 
@@ -48,24 +53,29 @@ Once the preparation script is complete:
 
 Back in the terminal window where `virtualbox.sh` was run from, execute the following, it will take a while:
 
-    <code>NAME=$(basename -s .vhd *.vhd)
-    VBOX=$(VBoxManage showvminfo "$NAME" | grep "Config file" | cut -d : -f 2 -s | sed 's/^ *//g')
-    vagrant package --base "${VBOX}" --output windows-server-2008-r2-eval.box
-    vagrant box add windows-server-2008-r2-eval windows-server-2008-r2-eval.box
-    </code>
+```
+NAME=$(basename -s .vhd *.vhd)
+VBOX=$(VBoxManage showvminfo "$NAME" | grep "Config file" | cut -d : -f 2 -s | sed 's/^ *//g')
+vagrant package --base "${VBOX}" --output windows-server-2008-r2-eval.box
+vagrant box add windows-server-2008-r2-eval windows-server-2008-r2-eval.box
+```
 
 If you are rebuilding an earlier box, you'll need to remove the exiting one before running the above commands:
 
-    <code>vagrant box remove windows-server-2008-r2-eval
-    </code>
+```
+vagrant box remove windows-server-2008-r2-eval
+```
 
 To create your new windows vagrant instance:
 
-    <code>vagrant init windows-server-2008-r2-eval
-    # alter Vagrant file according to https://github.com/WinRb/vagrant-windows
-    vagrant up
-    </code>
+```
+vagrant init windows-server-2008-r2-eval
+# alter Vagrant file according to https://github.com/WinRb/vagrant-windows
+vagrant up
+```
 
 You now have a fully functioning vagrant controlled windows box for the next 180 days, with the puppet provisioner baked in.
 
 Enjoy!
+
+<gist>tvjames/6750255</gist>

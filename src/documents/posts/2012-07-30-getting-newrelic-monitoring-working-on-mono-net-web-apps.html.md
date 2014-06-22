@@ -24,8 +24,6 @@ If you haven't tried out the NewRelic application monitoring, give it a go, its 
 
 ## TL;DR
 
-
-
   * Grab the installer for either x86/x64
   * Using msiexec on a windows box extract the contents using an administrator install (msiexec /a )
   * Copy the GAC dlls into your application's bin
@@ -34,12 +32,9 @@ If you haven't tried out the NewRelic application monitoring, give it a go, its 
   * Edit the newrelic.config file and supply your license key
   * Deploy & watch those stats roll in
   * Missing:
-
     * Externals tracking
     * Database tracking
     * Most other tracking
-
-
 
 ## The guts of it
 
@@ -81,10 +76,11 @@ Thanks NewRelic for the awesome monitoring platform and for not making it too ha
 
 For those that are interested, the LINQPad code for reflecting over the DLL to find the `IHttpModule`:
 
-    <code>var type = typeof(IHttpModule);
-    var types = typeof(NewRelic.Agent.Core.Agent).Assembly.GetTypes()
-        .Where(p => type.IsAssignableFrom(p));
+```
+var type = typeof(IHttpModule);
+var types = typeof(NewRelic.Agent.Core.Agent).Assembly.GetTypes()
+    .Where(p => type.IsAssignableFrom(p));
 
-    types.Dump();
-    </code>
+types.Dump();
+```
 

@@ -49,16 +49,16 @@ Based on the success of processing batches of documents then pausing between to 
 
 And some code:
 
-    <code>var documentStore = …;
-    while (iStillHaveDocumentsToImport) {
-        ImportBatchOfDocumentsInto(documentStore);
+```
+var documentStore = …;
+while (iStillHaveDocumentsToImport) {
+    ImportBatchOfDocumentsInto(documentStore);
 
-        var staleIndexes = documentStore.DatabaseCommands.GetStatistics().StaleIndexes;
-        while (staleIndexes.Length > 0) {
-            Thread.Sleep(1000);
+    var staleIndexes = documentStore.DatabaseCommands.GetStatistics().StaleIndexes;
+    while (staleIndexes.Length > 0) {
+        Thread.Sleep(1000);
 
-            staleIndexes = documentStore.DatabaseCommands.GetStatistics().StaleIndexes;
-        }
+        staleIndexes = documentStore.DatabaseCommands.GetStatistics().StaleIndexes;
     }
-    </code>
-
+}
+```

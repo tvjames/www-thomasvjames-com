@@ -29,29 +29,31 @@ The front end in this case isn't too interesting so I'll focus on the CouchDB do
 
 We have three main entities we need to be concerned about, the original target link, the shortened link and the tracking record. I considered a number of document structures for these objects including the following:
 
-    <code>links/foobar = {
-        shortCode: "foobar",
-        url: "http://www.example.com/",
-        logs: [
-            {ip: .., browser: ..., timestamp: ..}
-        ]
-    }
-    </code>
+```
+links/foobar = {
+    shortCode: "foobar",
+    url: "http://www.example.com/",
+    logs: [
+        {ip: .., browser: ..., timestamp: ..}
+    ]
+}
+```
 
 This model looked pretty simple, all the concerns about the domain are kept in one place but this model has the drawback that every time someone uses the short link the document must be read, updated and written and in a web environment this could quickly lead to document conflicts.
 
 So i looked at a model that separated the log records from the main document.
 
-    <code>links/foobar = {
-        shortCode: "foobar",
-        url: "http://www.example.com/"
-    }
+```
+links/foobar = {
+    shortCode: "foobar",
+    url: "http://www.example.com/"
+}
 
-    links/foobar-timestamp = {
-        shortCode: "foobar",
-        ip: .., browser: ..., timestamp: ..}
-    }
-    </code>
+links/foobar-timestamp = {
+    shortCode: "foobar",
+    ip: .., browser: ..., timestamp: ..}
+}
+```
 
 This was the model i settled on, each request would only require a document lookup and a single document write. Both document structures would still allow the same style of CouchDB map-reduce views to be created, but the second would mean there would be less updates to the view for each time a shortened link was accessed.
 

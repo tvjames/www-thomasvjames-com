@@ -35,13 +35,7 @@ Was the JooJoo worth it? Not at all, but its now part of our tech history of a t
 
 Fusion Garage today? They are still in busines it would appear, their website is still up at [The JooJoo.com](https://thejoojoo.com/) but you can no longer buy a JooJoo device, instead there is a "coming soon" style message.
 
-<blockquote>
-
->
 > We are looking ahead to our next generation of devices of varying screen sizes. Stay tuned here for more information about these exciting products in the first half of 2011.
->
->
-</blockquote>
 
 Well Fusion Garage, the first half of 2011 is almost over and going on past experience i wont be holding my breath that there'll be anything interesting to replace that message come 1st July.
 

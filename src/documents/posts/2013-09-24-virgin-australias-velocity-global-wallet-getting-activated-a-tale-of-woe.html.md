@@ -23,13 +23,7 @@ The second issue I faced was when attempting to meet the high ID requirements, o
 
 I threw my hands up at this point, I wasn't going to go to the effort of certifying and scanning documents just for a travel money card, if I was going to go to that much effort I'd just walk into travelex. I leave a few ranty tweets and get a stock "if you're having issues please call us" kind of reply. Along with this reassuring message about the need for all the identity verification.
 
-<blockquote>
-
->
 > "Hi, as the Global Wallet allows global access to stored funds, the verification process needs to be secure for our members"
->
->
-</blockquote>
 
 I appreciate that the portal to provide my identification needs to be secure, this doesn't address my frustration at the level of identity verification required, and what seemed like illogical rules around incompatible identification documents.
 

@@ -18,23 +18,23 @@ I received an interesting, unexpected and worrying email from FusionGarage. Inte
 
 Contents of the email:
 
+```
+Enquiry‏
+ From:   jonathan@fusiongarage.com on behalf of
+         Joojoo Support (support@thejoojoo.com)
+ Sent:   Friday, 23 April 2010 12:22:05 PM
+ To:     total 64 email accounts
 
+Dear Sir and Madam,
+  Thank you for supporting JooJoo.
+  We hope to get your feedback about the JooJoo Tablet.
+  Please revert back to us want you think of our product.
+  Please drop us a line on how your JooJoo is working.
 
-    <code>Enquiry‏<br></br>
-    From:   jonathan@fusiongarage.com on behalf of Joojoo Support (support@thejoojoo.com)<br></br>
-    Sent:   Friday, 23 April 2010 12:22:05 PM<br></br>
-    To:     total 64 email accounts </p>
+Thank you.
 
-    	<p>Dear Sir and Madam,
-      Thank you for supporting JooJoo.
-      We hope to get your feedback about the JooJoo Tablet.
-      Please revert back to us want you think of our product.
-      Please drop us a line on how your JooJoo is working.</p>
-
-      Thank you.
-
-                         JooJooSupportTeam
-    </code>
+                     JooJooSupportTeam
+```
 
 So that pretty much confirms that a total of 64 orders were shipped in the initial batch and everyone that ordered one now knows the paypal email of everyone else.
 

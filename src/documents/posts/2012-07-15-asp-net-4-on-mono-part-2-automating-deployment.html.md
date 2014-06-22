@@ -29,7 +29,6 @@ Going with our (heroku inspired name) example app: `falling-star-3455`
   * Base directory for app deployed apps: `/srv/apps`
   * Each app will have its own directory: `/srv/apps/falling-star-3455`
   * Within each app directory we'll have the following:
-
     * `/bin` any binaries / scripts that we need
     * `/conf` external configuration, this is where we'll store the nginx & supervisor config
     * `/app` directory for our application
@@ -71,15 +70,17 @@ Finally we wire up the configuration for supervisord & nginx that we uploaded ea
 
 Supervisor:
 
-    <code>supervisorctl reread
-    supervisorctl update
-    supervisorctl restart falling-star-3455:*
-    </code>
+```
+supervisorctl reread
+supervisorctl update
+supervisorctl restart falling-star-3455:*
+```
 
 Nginx:
 
-    <code>nginx -s reload
-    </code>
+```
+nginx -s reload
+```
 
 ## Get the code
 

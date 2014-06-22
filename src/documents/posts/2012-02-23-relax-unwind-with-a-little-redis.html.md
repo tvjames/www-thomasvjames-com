@@ -30,12 +30,12 @@ It may seem like overkill to add an additional component to our software stack _
 
 Within the sample Unwind application, the implementation is as simple as implementing the counter interface with the ServiceStack Redis client.
 
-    <code>
-    using (var redis = new RedisClient("Host", 1234)){
-    	redis.Password = "Password";
+```
+using (var redis = new RedisClient("Host", 1234)){
+	redis.Password = "Password";
 
-    	var counter = redis.IncrementValue("UnwindNextLinkCounter");
-    }
-    </code>
+	var counter = redis.IncrementValue("UnwindNextLinkCounter");
+}
+```
 
 Can it get any harder?

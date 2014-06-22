@@ -22,42 +22,44 @@ Thanks to articles below however there is hope, the LCD library for the Arduino 
 
 Code to initialise the freetronics 16x2 LCD:
 
-    <code>        // initialise the LCD display
-            var ledPort = new OutputPort(Pins.ONBOARD_LED, false);
-            var backlightPort = new OutputPort(Pins.GPIO_PIN_D3, false);
-            var lcdProvider = new MicroLiquidCrystal.GpioLcdTransferProvider(
-                Pins.GPIO_PIN_D8,  // RS
-                Pins.GPIO_PIN_D9,  // ENABLE
-                Pins.GPIO_PIN_D4,  // D4
-                Pins.GPIO_PIN_D5,  // D5
-                Pins.GPIO_PIN_D6,  // D6
-                Pins.GPIO_PIN_D7); // D7
-            var lcd = new Lcd(lcdProvider);
-            lcd.Begin(16, 2);
-    </code>
+```
+// initialise the LCD display
+var ledPort = new OutputPort(Pins.ONBOARD_LED, false);
+var backlightPort = new OutputPort(Pins.GPIO_PIN_D3, false);
+var lcdProvider = new MicroLiquidCrystal.GpioLcdTransferProvider(
+    Pins.GPIO_PIN_D8,  // RS
+    Pins.GPIO_PIN_D9,  // ENABLE
+    Pins.GPIO_PIN_D4,  // D4
+    Pins.GPIO_PIN_D5,  // D5
+    Pins.GPIO_PIN_D6,  // D6
+    Pins.GPIO_PIN_D7); // D7
+var lcd = new Lcd(lcdProvider);
+lcd.Begin(16, 2);
+```
 
 Code to update the display:
 
-    <code>        lcd.Clear();
-            lcd.SetCursorPosition(2, 0);
+```
+lcd.Clear();
+lcd.SetCursorPosition(2, 0);
 
-            lcd.Write("Ready ... ");
+lcd.Write("Ready ... ");
 
-            while (true)
-            {
-                // set the cursor to column 0, line 1
-                lcd.SetCursorPosition(0, 1);
+while (true)
+{
+    // set the cursor to column 0, line 1
+    lcd.SetCursorPosition(0, 1);
 
-                // print the number of seconds since reset:
-                lcd.Write((Utility.GetMachineTime()).ToString());
+    // print the number of seconds since reset:
+    lcd.Write((Utility.GetMachineTime()).ToString());
 
-                ledPort.Write(true);
-                Thread.Sleep(350);
+    ledPort.Write(true);
+    Thread.Sleep(350);
 
-                ledPort.Write(false);
-                Thread.Sleep(250);
-            }
-    </code>
+    ledPort.Write(false);
+    Thread.Sleep(250);
+}
+```
 
 Running display:
 [![](http://www.thomasvjames.com/wp-content/uploads/2011/11/IMG_20111123_190923-300x224.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/11/IMG_20111123_190923.jpg)

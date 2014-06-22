@@ -18,19 +18,10 @@ This is a rant about people asking questions on a particular subject when a quic
 
 [What is the F# language?](http://programmers.stackexchange.com/questions/52313/what-is-the-f-language)
 
-<blockquote>
+> I have just learned my first Hello World project in C# and now I have
+> heard there is F#.
 
->
-> I have just learned my first Hello World project in C# and now I have > heard there is F#.
->
->
-
-
->
 > I was wondering what is it and how is it different from C#?
->
->
-</blockquote>
 
 Really you couldn't have googled this?
 
