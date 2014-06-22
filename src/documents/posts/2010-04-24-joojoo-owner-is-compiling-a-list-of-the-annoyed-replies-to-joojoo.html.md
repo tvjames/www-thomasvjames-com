@@ -14,8 +14,4 @@ tags:
 
 One of the JooJoo owners emailed is now compiling the replies from others. Check it out;
 
-
-
-
-
 [http://donnyspi.com/joojoo.html](http://donnyspi.com/joojoo.html)

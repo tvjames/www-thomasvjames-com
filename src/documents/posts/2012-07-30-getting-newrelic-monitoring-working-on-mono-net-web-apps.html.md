@@ -16,78 +16,32 @@ About a week ago I set out attempting to get [NewRelic](https://newrelic.com)'s 
 
 If you haven't tried out the NewRelic application monitoring, give it a go, its free for a Lite plan which gives you pretty good metrics but only keeps the last 30 minutes of data. It allows you to monitor:
 
-
-
-
-
   * All the basics
-
-
   * Time taken in internal calls to external sites (this is pretty handy)
-
-
   * Process memory use
-
-
   * Real load time in the browser through JS injection
-
-
   * Database calls including SQL statements
-
-
-
-
 
 ## TL;DR
 
 
 
-
-
-
-
   * Grab the installer for either x86/x64
-
-
-  * Using msiexec on a windows box extract the contents using an administrator install (msiexec /a ) 
-
-
+  * Using msiexec on a windows box extract the contents using an administrator install (msiexec /a )
   * Copy the GAC dlls into your application's bin
-
-
   * Copy the newrelic.xml to newrelic.config in your application
-
-
-  * Add a httpModule reference to `"NewRelic.Agent.Core.Tracer.Web.NewRelicHttpModule, NewRelic.Agent.Core"` in your web.config file. 
-
-
+  * Add a httpModule reference to `"NewRelic.Agent.Core.Tracer.Web.NewRelicHttpModule, NewRelic.Agent.Core"` in your web.config file.
   * Edit the newrelic.config file and supply your license key
-
-
   * Deploy & watch those stats roll in
-
-
   * Missing:
 
-
-
-    * Externals tracking 
-
-
+    * Externals tracking
     * Database tracking
-
-
     * Most other tracking
 
 
 
-
-
-
-
 ## The guts of it
-
-
 
 The [NewRelic documentation](https://newrelic.com/docs/dotnet/new-relic-for-net) was the first port of call on working out if this little endeavour was even possible and I must say they provide a decent amount of information about how the .net monitoring agent works. It's pretty clever if you ask me.
 
@@ -97,35 +51,15 @@ Reading up on how to build a CLR profiler didn't provide any great insight into 
 
 I started with analysing the installer, I grabbed the 64bit one but the 32bit one should work as well. I found that along with the profiler DLL there were 4 others that get installed into the GAC.
 
-
-
-
-
   * NewRelic.Agent.Core.dll
-
-
   * NewRelic.ICSharpCode.SharpZipLib.dll
-
-
   * NewRelic.Json.dll
-
-
   * NewRelic.Log.dll
-
-
 
 Using reflection over the `NewRelic.Agent.Core` DLL (as the others were obviously supporting modules) revealed a number of interesting classes and interfaces. These ones peeked my interest:
 
-
-
-
-
   * IAgent
-
-
   * Agent
-
-
 
 The Agent class contained a single public constructor as far as I could tell. This was worth a shot, I copied the newrelic.xml file into newrelic.config along side my app's web.config and supplied my newrelic license key and using mono develop started the app on my local machine.
 
@@ -147,14 +81,10 @@ Thanks NewRelic for the awesome monitoring platform and for not making it too ha
 
 For those that are interested, the LINQPad code for reflecting over the DLL to find the `IHttpModule`:
 
-
-    
     <code>var type = typeof(IHttpModule);
     var types = typeof(NewRelic.Agent.Core.Agent).Assembly.GetTypes()
         .Where(p => type.IsAssignableFrom(p));
-    
+
     types.Dump();
     </code>
-
-
 

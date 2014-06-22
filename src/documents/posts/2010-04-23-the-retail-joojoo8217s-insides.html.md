@@ -13,7 +13,5 @@ tags:
 ---
 
 ![20100423002.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100423002.jpg&max_width=500&max_height=500&quality=100)  
-  
-
 
 The retail JooJoo's insides.

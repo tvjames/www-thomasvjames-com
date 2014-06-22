@@ -13,7 +13,5 @@ tags:
 ---
 
 ![20100423006.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100423006.jpg&max_width=500&max_height=500&quality=100)  
-  
-
 
 Under the heat pipe … the brains of the JooJoo …

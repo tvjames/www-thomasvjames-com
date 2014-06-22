@@ -16,8 +16,6 @@ tags:
   Note: this applies to build 2139 and above of RavenDB
 </blockquote>
 
-
-
 One of the ways RavenDB conserves resources is to only load tenant databases that are in use. When the RavenDB process is start/restarted this means that the in-use databases are only loaded when the first request is received. This can result in timeouts in the client if your database is large, like mine, and takes more than 30 seconds to load.
 
 Thanks to Oren via the mailing list, from build 2139 there is now a way to implement global startup hooks. This allows us to start the tenant databases as soon as RavenDB is up-and-running.
@@ -28,8 +26,6 @@ Anyway, on to the code, to create a startup hook all that is required is impleme
 
 I had to do a dig of digging to figure out how to implement the load database on startup hook so this code shouldn't be considered best practice, YMMV, but it worked for me.
 
-
-    
     <code>using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -40,13 +36,13 @@ I had to do a dig of digging to figure out how to implement the load database on
     using Raven.Database;
     using Raven.Database.Plugins;
     using Raven.Database.Server;
-    
+
     namespace Plugins
     {
         public class LoadDatabaseOnServerStartupTask : IServerStartupTask
         {
             private const string DATABASE_NAME = "MyDatabase";
-    
+
             public void Execute(HttpServer server)
             {
                 // wait for the system database
@@ -56,8 +52,6 @@ I had to do a dig of digging to figure out how to implement the load database on
         }
     }
     </code>
-
-
 
 This is just a simple example and without much more effort can be adapted to read a list of databases to load from a configuration document in the _System_ database. Don't forget logging as well… improvements welcome :)
 

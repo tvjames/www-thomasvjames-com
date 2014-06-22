@@ -14,14 +14,6 @@ tags:
 
 The geniuses over at http://www.thejoojooforum.com/ and in specific HighJinx have figured out a way to boot from an alternative boot source.
 
-
-
-
-
 This is done with a reset, power on and then frantic pressing of the del and f11 keys. This will then sometimes bring up the boot options menu. I've been able to boot from the usb key I installed ubuntu netbook remix 10.04 live on to. It worked flawlessly with the exception of the touchpanel.
-
-
-
-
 
 Pictures to come.

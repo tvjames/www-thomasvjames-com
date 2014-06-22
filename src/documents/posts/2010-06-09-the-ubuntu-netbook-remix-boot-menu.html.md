@@ -14,7 +14,5 @@ tags:
 ---
 
 ![20100609004.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100609004.jpg&max_width=500&max_height=500&quality=100)  
-  
-
 
 The ubuntu netbook remix boot menu

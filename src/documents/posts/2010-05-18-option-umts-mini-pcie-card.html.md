@@ -14,8 +14,4 @@ tags:
 
 The Mini PCIe arrived in the Mail late last week and was promptly placed in the spare slot in the JooJoo. I got what I expected. Nothing. I was secretly hoping a new setting tab would open up allowing me to provide the APN details for the 3G connection, but no dice.
 
-
-
-
-
 Well at least now when one of us finally cracks this thing I'll be able to get 3G internet on it.

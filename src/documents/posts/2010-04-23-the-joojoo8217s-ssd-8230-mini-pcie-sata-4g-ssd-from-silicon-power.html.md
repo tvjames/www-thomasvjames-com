@@ -13,7 +13,5 @@ tags:
 ---
 
 ![20100423003.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100423003.jpg&max_width=500&max_height=500&quality=100)  
-  
-
 
 The JooJoo's SSD … Mini PCIe SATA 4G SSD from Silicon Power
