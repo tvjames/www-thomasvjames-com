@@ -8,9 +8,10 @@
     <title><%= @getPreparedTitle() %></title>
 
     <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro" type='text/css'>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
   </head>
   <body>
 
@@ -102,6 +103,13 @@
     <%- @getBlock('scripts').add(@site.scripts or [], {defer:false, async:false}).add(@document.scripts or [], {defer:false, async:false}).toHTML() %>
     <script>
       $(document).foundation();
+      $.fn.tagcloud.defaults = {
+        size: {start: 8, end: 22, unit: 'pt'},
+        color: {start: '#008cba', end: '#546CFF'}
+      };
+      $(function () {
+        $('section.tag-cloud a').tagcloud();
+      });
     </script>
 
   </body>

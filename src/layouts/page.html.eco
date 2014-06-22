@@ -23,9 +23,14 @@ layout: default
       </ul>
     </section>
     <% end %>
-    <section>
-      <h3>Tags</h3>
-      <p>fjjjjfjfjfjfj</p>
+    <section class="tag-cloud" title="Tags">
+      <p>
+        <% for tag, data of @getTagCloud(): %>
+          <a href="<%= data.url %>" data-tag-count="<%= data.count %>" data-tag-weight="<%= data.weight %>"rel="<%= data.count %>">
+            <%= tag %>
+          </a>
+        <% end %>
+      </p>
     </section>
   </div>
 </div>

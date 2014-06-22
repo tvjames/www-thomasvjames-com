@@ -15,6 +15,7 @@ docpadConfig = {
 			]
 			scripts: [
 				"/js/vendor/jquery.js",
+				"/js/vendor/jquery.tagcloud.js",
 				"/js/foundation.min.js"
 			]
 			sections: [
@@ -90,7 +91,6 @@ docpadConfig = {
 						<%- @partial('tag', @) %>
 						"""
 				)
-
 }
 
 # Export the DocPad Configuration

@@ -58,6 +58,10 @@ body > .base {
   min-height: 20em;
 }
 
+.tag-cloud {
+  font-family: 'Source Code Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
 article header h3 {
   margin-bottom: 0;
 }
