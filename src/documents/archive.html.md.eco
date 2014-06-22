@@ -5,9 +5,4 @@ nav: "Archive"
 
 # Archive
 
-<% for post in @getCollection("posts").toJSON(): %>
-<li>
-  <a href="<%= post.url %>" title="<%= post.title %>"><%= post.date %> <%= post.title %>
-  </a>
-</li>
-<% end %>
+<%- @partial('posts', {data: @getCollection("posts")}) %>
