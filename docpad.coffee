@@ -5,6 +5,8 @@
 # http://learn.bevry.me/queryengine/guide#-beginswith-aka-startswith-
 docpadConfig = {
 	templateData:
+		production:
+			url: "http://www.thomasvjames.com"
 		site:
 			title: "thomasvjames.com"
 			styles: [
@@ -20,6 +22,8 @@ docpadConfig = {
 					{text: "Photography", alt: "Photography", href: "http://www.thomasvjames.com/photography"}
 				]}
 			]
+			disqus:
+				shortname: "www-thomasvjames-com"
 			authors:
 				tvjames:
 					name: "Thomas James"
@@ -27,6 +31,8 @@ docpadConfig = {
 					href: (site) -> site.url + "/about"
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+		getPreparedDisqusUrl: -> @production.url + @document.url
+		getPreparedDisqusShortname: -> @site.disqus.shortname
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 		getAuthor: (author) -> @site.authors[author]

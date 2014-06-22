@@ -6,5 +6,5 @@ layout: page
 # Latest Posts
 
 <% for post in @getCollection("posts").first(3): %>
-  <%- @partial('post', {content: post.get('contentRenderedWithoutLayouts') or "**testing**", data: post.toJSON()}) %>
+  <%- @partial('post', {content: post.get('contentRenderedWithoutLayouts'), data: post.toJSON(), sumaryOnly: true}) %>
 <% end %>

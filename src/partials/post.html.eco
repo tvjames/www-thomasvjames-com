@@ -35,10 +35,11 @@ layout: null
       </section>
     <% end %>
 
-    <p class="postmetadata">
-      <small>
-        <a href="#respond" title="Comment on <%= @data.title %>">No comments... »</a>
-      </small>
-    </p>
+    <% if not @sumaryOnly: %>
+      <p class="postmetadata">
+        <div id="disqus_thread"></div>
+      </p>
+    <% end %>
+
   </footer>
 </article>
