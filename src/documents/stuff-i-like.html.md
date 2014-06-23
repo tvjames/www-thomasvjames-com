@@ -10,9 +10,9 @@ wordpress_id: 327
 sections:
   - title: aside
     links:
-      - text: testing
-        alt: abc testing
-        url: abc
+      - text: Kickstarter
+        alt: Kickstarter
+        url: http://www.kickstarter.com/
 ---
 
 ## Stuff I Like
