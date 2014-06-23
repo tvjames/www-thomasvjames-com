@@ -8,7 +8,7 @@ layout: null
     <aside class="right">
       <div class="pic"><img alt="Gravatar for <%= author.name %>" src="<%- @getGravatarUrl(author.email, 50, 'retro', 'X') %>" class="avatar avatar-50 photo" height="50" width="50"></div>
     </aside>
-    <h3><a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a></h3>
+    <h3><a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a> <small><a href="<%- @getPreparedPostForkUrl(@data) %>" title="Edit this post on GitHub.com and submit an improvement. "><i class="fa fa-code-fork"></i></a></small></h3>
     <small><time pubdate datetime="<%= @moment(@data.date).toISOString() %>" title="<%= @moment(@data.date).toISOString() %>"><%= @moment(@data.date).format("LLLL ZZ") %></time></small>
     <small>by <a href="<%- author.href(@site) %>" title="Posts by <%= author.name %>" rel="author"><%= author.name %></a></small>
   </header>
@@ -42,6 +42,14 @@ layout: null
       <p class="postmetadata">
         <div id="disqus_thread"></div>
       </p>
+    <% end %>
+
+    <% if (not @sumaryOnly): %>
+      <section class="fork-me postmetadata text-center">
+        <small>
+          <a href="<%- @getPreparedPostForkUrl(@data) %>" title="Edit this post on GitHub.com and submit an improvement. ">Edit this post on GitHub.com and submit an improvement. </a>
+        </small>
+      </section>
     <% end %>
 
   </footer>
