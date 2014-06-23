@@ -4,6 +4,11 @@
 # Define the DocPad Configuration
 # http://learn.bevry.me/queryengine/guide#-beginswith-aka-startswith-
 docpadConfig = {
+	environments:
+		static:
+			templateData:
+				site:
+					url: "http://www.thomasvjames.com"
 	templateData:
 		production:
 			url: "http://www.thomasvjames.com"
