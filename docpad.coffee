@@ -7,7 +7,7 @@ docpadConfig = {
 	templateData:
 		production:
 			url: "http://www.thomasvjames.com"
-			github: "https://github.com/tvjames/www.thomasvjames.com/tree/master"
+			github: "https://github.com/tvjames/www-thomasvjames-com/tree/master"
 		site:
 			title: "thomasvjames.com"
 			styles: [
