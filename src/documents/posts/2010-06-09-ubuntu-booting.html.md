@@ -13,7 +13,7 @@ tags:
 - ubuntu
 ---
 
-![20100609005.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100609005.jpg&max_width=500&max_height=500&quality=100)  
+[![20100609005.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100609005_zps27deac89.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100609005_zps27deac89.jpg.html "photo 20100609005_zps27deac89.jpg")
 
 Ubuntu booting.
 

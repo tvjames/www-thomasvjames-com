@@ -35,4 +35,8 @@ Now my journey begins getting used to the Android way of doing things, but on fi
 
 And for those of you into unboxings:
 
-[![](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0194-300x225.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0194.jpg)[![](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0195-300x225.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0195.jpg)[![](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0196-225x300.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0196.jpg)[![](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0197-300x225.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0197.jpg)[![](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0199-300x225.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/04/IMG_0199.jpg)
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_0194_zps03481329.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_0194_zps03481329.jpg.html "photo IMG_0194_zps03481329.jpg")
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_0195_zps6350a6da.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_0195_zps6350a6da.jpg.html "photo IMG_0195_zps6350a6da.jpg")
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_0196_zps192c1d87.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_0196_zps192c1d87.jpg.html "photo IMG_0196_zps192c1d87.jpg")
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_0197_zps48c3245d.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_0197_zps48c3245d.jpg.html "photo IMG_0197_zps48c3245d.jpg")
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_0199_zps4385f734.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_0199_zps4385f734.jpg.html "photo IMG_0199_zps4385f734.jpg")

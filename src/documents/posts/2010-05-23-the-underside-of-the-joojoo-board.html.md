@@ -12,6 +12,6 @@ tags:
 - joojoo
 ---
 
-![20100523002.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100523002.jpg&max_width=500&max_height=500&quality=100)  
+[![20100523002.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100523002_zps7a3b22af.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100523002_zps7a3b22af.jpg.html "photo 20100523002_zps7a3b22af.jpg")
 
 The underside of the JooJoo board.

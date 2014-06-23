@@ -12,6 +12,6 @@ tags:
 - joojoo
 ---
 
-![20100423002.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100423002.jpg&max_width=500&max_height=500&quality=100)  
+[![20100423002.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423002_zpsd7180f2d.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423002_zpsd7180f2d.jpg.html "photo 20100423002_zpsd7180f2d.jpg")
 
 The retail JooJoo's insides.

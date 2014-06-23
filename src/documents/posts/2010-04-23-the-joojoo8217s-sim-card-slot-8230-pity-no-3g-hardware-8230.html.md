@@ -12,6 +12,6 @@ tags:
 - joojoo
 ---
 
-![20100423004.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100423004.jpg&max_width=500&max_height=500&quality=100)  
+[![20100423004.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423004_zps82515f7f.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423004_zps82515f7f.jpg.html "photo 20100423004_zps82515f7f.jpg")
 
 The JooJoo's SIM card slot … pity no 3G hardware … but its on its way.

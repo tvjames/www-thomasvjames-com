@@ -13,6 +13,6 @@ tags:
 - ubuntu
 ---
 
-![20100609004.jpg](http://www.thomasvjames.com/blog/includes/thumb.php?file=../uploads/20100609004.jpg&max_width=500&max_height=500&quality=100)  
+[![20100609004.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100609004_zpsea11116a.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100609004_zpsea11116a.jpg.html "photo 20100609004_zpsea11116a.jpg")
 
 The ubuntu netbook remix boot menu

@@ -62,7 +62,8 @@ while (true)
 ```
 
 Running display:
-[![](http://www.thomasvjames.com/wp-content/uploads/2011/11/IMG_20111123_190923-300x224.jpg)](http://www.thomasvjames.com/wp-content/uploads/2011/11/IMG_20111123_190923.jpg)
+
+[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_20111123_190923_zps2e755731.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_20111123_190923_zps2e755731.jpg.html "photo IMG_20111123_190923_zps2e755731.jpg")
 
 References:
 
