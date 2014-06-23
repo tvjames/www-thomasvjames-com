@@ -38,7 +38,7 @@ docpadConfig = {
 		getPreparedRssUrl: -> @site.url + '/rss.xml'
 		getPreparedEmail: -> "mailto:#{@site.authors.tvjames.email}"
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
-		getPreparedPostForkUrl: (doc) -> @production.github + "/src/" + doc.relativePath
+		getPreparedPostForkUrl: (doc) -> @production.github + "/src/documents/" + doc.relativePath
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 		getAuthor: (author) -> @site.authors[author]
 		getGravatarUrl: (email, size, type, rating) ->
