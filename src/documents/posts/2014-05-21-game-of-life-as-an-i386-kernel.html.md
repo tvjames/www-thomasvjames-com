@@ -8,7 +8,7 @@ title: Game of Life as an i386 kernel
 wordpress_id: 359
 categories:
 - Development
-- Linux &amp; Open Source
+- Linux & Open Source
 tags:
 - kernel
 ---
