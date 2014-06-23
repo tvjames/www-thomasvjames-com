@@ -72,6 +72,7 @@ docpadConfig = {
 		dateurls:
 			cleanurl: true
 			trailingSlashes: true
+			dateFormat: '/YYYY/MM'
 		rss:
 			default:
 				collection: 'posts'
