@@ -53,6 +53,7 @@ docpadConfig = {
 			if type then url += "d=#{type}&"
 			if rating then url += "r=#{rating}"
 			return url
+		getTagCloud: -> []
 
 	collections:
 		pages: ->
