@@ -3,8 +3,12 @@ node_js:
   - '0.10'
 env:
   global:
+  - secure:  "ae9THBb6O1BQwtV9e8XXxilMS35Dp24SGruTBmMoSxES+UQ/EccG1zxIAvOq13JbGvFeZM3ukoNj5bAIOaOfCzM+5AKpv0A6mVpmbyw7w0EtvGy0V0XdEf4jyQ8V8W0NfOFxVpvDccqWh+IbdcAD2YbO8FP+J3ZNrHoiTsaWZYE="
   - SITE_NAME="www-thomasvjames-com"
+  - AWS_KEY="AKIAI3QW66MMCFEZJFQQ"
   - TOPIC_ARN="arn:aws:sns:us-east-1:503767125918:www-thomasvjames-com-deployment-BuildReadyNotifications-170C5JGRC638S"
+before_install:
+  - pip install awscli
 script:
   - docpad generate --env static
   - mkdir publish
