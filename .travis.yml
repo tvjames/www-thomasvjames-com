@@ -3,12 +3,13 @@ node_js:
   - '0.10'
 env:
   global:
-  - secure:  "ae9THBb6O1BQwtV9e8XXxilMS35Dp24SGruTBmMoSxES+UQ/EccG1zxIAvOq13JbGvFeZM3ukoNj5bAIOaOfCzM+5AKpv0A6mVpmbyw7w0EtvGy0V0XdEf4jyQ8V8W0NfOFxVpvDccqWh+IbdcAD2YbO8FP+J3ZNrHoiTsaWZYE="
+  - secure:  "UzsWrA+EHUK8Wz2A8O2xx6uFC9oiXy2JeJgCvcT4QxO5oksKbpb+dz0i9V80R9UAUxV6DGTlvnZro7zVgAJfrIQR6pLRKw6LsSyFZe9m6wEGRSASt1Rel5Wlhcf3sIREBE7eR8n6JQpkojjQRCXI7BU0MEyGY14OVXsLBhnTl/M="
   - SITE_NAME="www-thomasvjames-com"
-  - AWS_KEY="AKIAI3QW66MMCFEZJFQQ"
+  - AWS_ACCESS_KEY_ID="AKIAI3QW66MMCFEZJFQQ"
+  - AWS_DEFAULT_REGION="us-east-1"
   - TOPIC_ARN="arn:aws:sns:us-east-1:503767125918:www-thomasvjames-com-deployment-BuildReadyNotifications-170C5JGRC638S"
 before_install:
-  - pip install awscli
+  - sudo pip install awscli
 script:
   - docpad generate --env static
   - mkdir publish
@@ -24,4 +25,5 @@ deploy:
   local-dir: publish
   on:
     branch: master
-#after_deploy:
+after_deploy:
+  - aws sns publish --topic-arn "${TOPIC_ARN}" --message "${SITE_NAME}-$TRAVIS_JOB_ID.tar.gz" --region "${AWS_REGION}"
