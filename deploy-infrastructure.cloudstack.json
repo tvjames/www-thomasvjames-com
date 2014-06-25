@@ -1,0 +1,221 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "S3 bucket, SNS & SQS infrastructure for async deploy 'www-thomasvjames-com-deployment'",
+
+  "Parameters" : {
+  },
+
+  "Mappings" : {
+  },
+
+  "Resources": {
+    "BuildArtefacts" : {
+      "Type" : "AWS::S3::Bucket",
+      "Properties" : {
+        "AccessControl" : "Private",
+        "WebsiteConfiguration" : {
+           "IndexDocument" : "index.html",
+           "ErrorDocument" : "error.html"
+        }
+      },
+      "DeletionPolicy" : "Retain"
+    },
+
+    "BuildReadyNotifications": {
+      "Type": "AWS::SNS::Topic",
+      "Properties": {
+        "Subscription": [
+          {
+            "Endpoint": {
+              "Fn::GetAtt": [
+                "BuildReadyNotificationsQueue",
+                "Arn"
+              ]
+            },
+            "Protocol": "sqs"
+          }
+        ]
+      }
+    },
+    "BuildReadyNotificationsQueue": {
+      "Type": "AWS::SQS::Queue"
+    },
+    "BuildReadyNotificationsQueuePolicy": {
+      "Type": "AWS::SQS::QueuePolicy",
+      "Properties": {
+        "Queues": [
+          {
+            "Ref": "BuildReadyNotificationsQueue"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2008-10-17",
+          "Id": "BuildReadyNotificationsQueuePolicy",
+          "Statement": [
+            {
+              "Sid": "Allow-User-SendMessage",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Action": [
+                "SQS:SendMessage"
+              ],
+              "Resource": {
+                "Fn::GetAtt": [
+                  "BuildReadyNotificationsQueue",
+                  "Arn"
+                ]
+              },
+              "Condition": {
+                "ArnEquals": {
+                  "aws:SourceArn": {
+                    "Ref": "BuildReadyNotifications"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    "BuildPublisherUser": {
+      "Type": "AWS::IAM::User",
+      "Properties": {
+        "Policies": [
+              {
+                "PolicyName": "bucket-access",
+                "PolicyDocument": {
+                  "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "s3:Put*"
+                        ],
+                        "Resource": [
+                            {"Fn::Join": [ "", [ "arn:aws:s3:::", {"Ref": "BuildArtefacts"}, "" ] ]},
+                            {"Fn::Join": [ "", [ "arn:aws:s3:::", {"Ref": "BuildArtefacts"}, "/*" ] ]}
+                        ],
+                        "Condition": {}
+                    },
+                    {
+                      "Effect": "Allow",
+                      "Action": "s3:ListAllMyBuckets",
+                      "Resource": "arn:aws:s3:::*"
+                    }
+                  ]
+                }
+              },
+              {
+                "PolicyName": "topic-publish",
+                "PolicyDocument": {
+                  "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "sns:Publish"
+                        ],
+                        "Resource": {"Ref" : "BuildReadyNotifications"},
+                        "Condition": {}
+                    }
+                  ]
+                }
+              }
+        ]
+      }
+    },
+    "BuildPublisherUserKeys": {
+      "Type": "AWS::IAM::AccessKey",
+      "Properties": {
+        "UserName": {
+          "Ref": "BuildPublisherUser"
+        }
+      }
+    },
+
+    "BuildDeployUser": {
+      "Type": "AWS::IAM::User",
+      "Properties": {
+        "Policies": [
+              {
+                "PolicyName": "bucket-access",
+                "PolicyDocument": {
+                  "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "s3:Get*",
+                            "s3:List*"
+                        ],
+                        "Resource": [
+                            {"Fn::Join": [ "", [ "arn:aws:s3:::", {"Ref": "BuildArtefacts"}, "" ] ]},
+                            {"Fn::Join": [ "", [ "arn:aws:s3:::", {"Ref": "BuildArtefacts"}, "/*" ] ]}
+                        ],
+                        "Condition": {}
+                    },
+                    {
+                      "Effect": "Allow",
+                      "Action": "s3:ListAllMyBuckets",
+                      "Resource": "arn:aws:s3:::*"
+                    }
+                  ]
+                }
+              },
+              {
+                "PolicyName": "queue-process",
+                "PolicyDocument": {
+                  "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "sqs:DeleteMessage",
+                            "sqs:ReceiveMessage"
+                        ],
+                        "Resource": { "Fn::GetAtt" : ["BuildReadyNotificationsQueue", "Arn"] },
+                        "Condition": {}
+                    }
+                  ]
+                }
+              }
+        ]
+      }
+    },
+    "BuildDeployUserKeys": {
+      "Type": "AWS::IAM::AccessKey",
+      "Properties": {
+        "UserName": {
+          "Ref": "BuildDeployUser"
+        }
+      }
+    }
+
+  },
+
+  "Outputs": {
+    "BuildArtefactsBucketName" : {
+      "Value" : { "Ref" : "BuildArtefacts" },
+      "Description" : "Name of S3 bucket to hold build artefacts"
+    },
+    "BuildPublisherUserKeysAccessKey": {
+        "Value": { "Ref": "BuildPublisherUserKeys" }
+    },
+    "BuildPublisherUserKeysAccessKeySecret": {
+        "Value": { "Fn::GetAtt": ["BuildPublisherUserKeys", "SecretAccessKey"] }
+    },
+    "BuildDeployUserKeysAccessKey": {
+        "Value": { "Ref": "BuildDeployUserKeys" }
+    },
+    "BuildDeployUserKeysAccessKeySecret": {
+        "Value": { "Fn::GetAtt": ["BuildDeployUserKeys", "SecretAccessKey"] }
+    },
+    "QueueArn" : {
+      "Value" : { "Fn::GetAtt" : [ "BuildReadyNotificationsQueue", "Arn" ]},
+      "Description" : "ARN of SQS Queue"
+    },
+    "TopicArn" : {
+      "Value" : { "Ref" : "BuildReadyNotifications" },
+      "Description" : "ARN of SNS Topic"
+    }
+  }
+}
