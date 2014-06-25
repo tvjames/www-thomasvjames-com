@@ -1,5 +1,7 @@
 # Your [DocPad](http://docpad.org) Project
 
+[![Build Status](https://travis-ci.org/tvjames/www-thomasvjames-com.png)](https://travis-ci.org/tvjames/www-thomasvjames-com)
+
 ## License
 Copyright &copy; 2014+ All rights reserved.
 
