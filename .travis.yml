@@ -1,5 +1,22 @@
 language: node_js
 node_js:
-  - "0.10"
+  - '0.10'
+env:
+  global:
+  - SITE_NAME="www-thomasvjames-com"
+  - TOPIC_ARN="arn:aws:sns:us-east-1:503767125918:www-thomasvjames-com-deployment-BuildReadyNotifications-170C5JGRC638S"
 script:
   - docpad generate --env static
+  - mkdir publish
+  - tar -czvf publish/${SITE_NAME}-$TRAVIS_JOB_ID.tar.gz -C out .
+deploy:
+  provider: s3
+  access_key_id: AKIAI3QW66MMCFEZJFQQ
+  secret_access_key:
+    secure: a4dAwKW46ixbq0zwiU0n6FphbHc3AWX/u+ChiWsONnJn7mLvoJ7+zwEQSjvJ24dkh/7euH4vYYgN0/8ps2y8RPisLc0zRjSV6jIJrybTMwCUpJfAXRZut7hu9MlrFcwJGyEshr0eII5kakZ7olDHUEO0umYMp9VcBNfwmHG/aFw=
+  bucket: www-thomasvjames-com-deployment-buildartefacts-171heuhj3uzmu
+  skip_cleanup: true
+  local-dir: publish
+  on:
+    branch: master
+#after_deploy:
