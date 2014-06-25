@@ -9,6 +9,7 @@ script:
   - docpad generate --env static
   - mkdir publish
   - tar -czvf publish/${SITE_NAME}-$TRAVIS_JOB_ID.tar.gz -C out .
+  - ls -la publish
 deploy:
   provider: s3
   access_key_id: AKIAI3QW66MMCFEZJFQQ
