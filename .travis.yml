@@ -15,7 +15,7 @@ script:
   - mkdir publish
   - tar -czvf publish/$SITE_NAME-$TRAVIS_BUILD_NUMBER.tar.gz -C out .
   - ls -la publish
-  - aws sns publish --topic-arn "$TOPIC_ARN" --message "$SITE_NAME-$TRAVIS_BUILD_NUMBER.tar.gz" --region "$AWS_REGION"
+  - aws sns publish --topic-arn "$TOPIC_ARN" --message "$SITE_NAME-$TRAVIS_BUILD_NUMBER.tar.gz" 
 deploy:
   provider: s3
   access_key_id: AKIAI3QW66MMCFEZJFQQ
@@ -27,4 +27,4 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - aws sns publish --topic-arn "$TOPIC_ARN" --message "$SITE_NAME-$TRAVIS_BUILD_NUMBER.tar.gz" --region "$AWS_REGION"
+  - aws sns publish --topic-arn "$TOPIC_ARN" --message "$SITE_NAME-$TRAVIS_BUILD_NUMBER.tar.gz"
