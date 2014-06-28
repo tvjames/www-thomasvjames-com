@@ -43,6 +43,7 @@ docpadConfig = {
 		getPreparedRssUrl: -> @site.url + '/rss.xml'
 		getPreparedEmail: -> "mailto:#{@site.authors.tvjames.email}"
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+		getPreparedCategoryUrl: (category) -> @site.url + "/category/" + category.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getPreparedPostForkUrl: (doc) -> @production.github + "/src/documents/" + doc.relativePath
 		getNavClass: (page) -> if (page.id is @document.id or @document.active is page.nav) then 'active' else 'inactive'
 		getAuthor: (author) -> @site.authors[author]
@@ -90,16 +91,27 @@ docpadConfig = {
 			aliases: {
 				'/rss.xml': '/feed/index.html'
 			}
+		tagcloud:
+			databaseCache: false
 		tags:
 			relativeDirPath: 'tag'
 			extension: '.html.eco'
 			injectDocumentHelper: (document) ->
 				document.setMeta(
-					#filename: document.get("id") #now we're getting somewhere
-					#url: "tag/" + document.get("id")
 					layout: 'page'
 					data: """
 						<%- @partial('tag', @) %>
+						"""
+				)
+		category:
+			relativeDirPath: 'category'
+			metaProperty: 'categories'
+			extension: '.html.eco'
+			injectDocumentHelper: (document) ->
+				document.setMeta(
+					layout: 'page'
+					data: """
+						<%- @partial('category', @) %>
 						"""
 				)
 }

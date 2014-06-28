@@ -7,7 +7,6 @@ slug: the-joojoo-fusion-garage-one-year-on-apple-reigns-supreme
 title: 'The JooJoo & Fusion Garage: One year on, Apple reigns supreme.'
 wordpress_id: 114
 categories:
-- JooJoo
 - Technology
 tags:
 - fusion garage

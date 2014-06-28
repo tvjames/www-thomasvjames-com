@@ -10,6 +10,7 @@
     "docpad": "~6.68.1",
     "docpad-plugin-alias": "~2.1.0",
     "docpad-plugin-associatedfiles": "~2.2.0",
+    "docpad-plugin-category": "~2.0.0",
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-dateurls": "~2.4.0",
     "docpad-plugin-eco": "~2.0.3",

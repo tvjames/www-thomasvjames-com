@@ -7,7 +7,6 @@ slug: to-the-cloud-mono-couchdb-deployfu-appharbor
 title: To the cloud ... Mono, CouchDB, DeployFu & AppHarbor
 wordpress_id: 11
 categories:
-- Development
 - Technology
 tags:
 - appharbor

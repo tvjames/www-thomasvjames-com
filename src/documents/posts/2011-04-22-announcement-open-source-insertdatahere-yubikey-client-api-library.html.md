@@ -8,7 +8,6 @@ title: 'Announcement - Open Source: InsertDataHere.Yubikey Client API library'
 wordpress_id: 106
 categories:
 - Development
-- Professional
 tags:
 - coding
 - insertdatahere

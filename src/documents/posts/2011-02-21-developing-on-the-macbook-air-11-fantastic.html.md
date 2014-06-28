@@ -8,7 +8,6 @@ title: 'Developing on the MacBook Air 11" ... fantastic ... '
 wordpress_id: 15
 categories:
 - Development
-- Technology
 tags:
 - apple
 - coding

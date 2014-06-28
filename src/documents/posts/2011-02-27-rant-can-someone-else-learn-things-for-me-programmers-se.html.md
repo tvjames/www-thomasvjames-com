@@ -7,7 +7,6 @@ slug: rant-can-someone-else-learn-things-for-me-programmers-se
 title: 'Rant: Can someone else learn things for me? Programmers.SE '
 wordpress_id: 14
 categories:
-- Development
 - Professional
 tags:
 - coding

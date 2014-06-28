@@ -6,6 +6,8 @@ layout: post
 slug: maid-in-singapore
 title: Maid in Singapore
 wordpress_id: 207
+categories:
+- Singapore
 tags:
 - opinion
 - rant

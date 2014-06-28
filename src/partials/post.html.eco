@@ -21,7 +21,7 @@ layout: null
         <small>
           <ul class="inline-list">
             <li class="heading">Categories: </li>
-            <% for category in @data.categories: %><li><%= category %></li><% end %>
+            <% for category in @data.categories: %><li><a href="<%- @getPreparedCategoryUrl(category) %>" rel="category"><%= category %></a></li><% end %>
           </ul>
         </small>
       </section>

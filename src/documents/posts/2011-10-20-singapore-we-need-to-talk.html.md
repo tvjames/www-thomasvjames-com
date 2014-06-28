@@ -6,6 +6,8 @@ layout: post
 slug: singapore-we-need-to-talk
 title: 'Singapore, We need to talk. '
 wordpress_id: 188
+categories:
+- Singapore
 tags:
 - opinion
 - rant

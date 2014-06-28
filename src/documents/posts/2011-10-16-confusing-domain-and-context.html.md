@@ -7,7 +7,6 @@ slug: confusing-domain-and-context
 title: Confusing Domain and Context?
 wordpress_id: 182
 categories:
-- Development
 - Professional
 tags:
 - coding

@@ -8,9 +8,11 @@ title: Game of Life as an i386 kernel
 wordpress_id: 359
 categories:
 - Development
-- Linux & Open Source
 tags:
 - kernel
+- open source
+- linux
+- vagrant
 ---
 
 I wrote this; [Game of life implemented as an i386 kernel](https://github.com/tvjames/kernel-mode-game-of-life).
