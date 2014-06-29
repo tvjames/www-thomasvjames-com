@@ -1,0 +1,8 @@
+---
+layout: null
+---
+
+<h2>Archive for <span class="subheader"><%= @document.archiveForYear or @document.archiveForYearMonth %></span>:</h2>
+
+<%- @partial('posts', {byYear: false, byMonth: true, data: @getFiles(archiveYear: @document.archiveForYear)}) %>
+<%- @partial('posts', {byYear: false, byMonth: false, data: @getFiles(archiveYearMonth: @document.archiveForYearMonth)}) %>

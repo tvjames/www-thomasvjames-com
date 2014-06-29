@@ -5,4 +5,4 @@ nav: "Archive"
 
 # Archive
 
-<%- @partial('posts', {data: @getCollection("posts")}) %>
+<%- @partial('posts', {byYear: true, data: @getCollection("posts")}) %>

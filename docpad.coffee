@@ -3,6 +3,8 @@
 
 # Define the DocPad Configuration
 # http://learn.bevry.me/queryengine/guide#-beginswith-aka-startswith-
+moment = require('moment')
+
 docpadConfig = {
 	environments:
 		static:
@@ -15,6 +17,7 @@ docpadConfig = {
 			github: "https://github.com/tvjames/www-thomasvjames-com/tree/master"
 		site:
 			title: "thomasvjames.com"
+			archives: ""
 			styles: [
 				"/css/foundation.css",
 				"/css/default.css"
@@ -42,6 +45,7 @@ docpadConfig = {
 		getPreparedDisqusShortname: -> @site.disqus.shortname
 		getPreparedRssUrl: -> @site.url + '/rss.xml'
 		getPreparedEmail: -> "mailto:#{@site.authors.tvjames.email}"
+		getPreparedArchiveUrl: (archive) -> @site.url + @site.archives + "/" + archive
 		getPreparedTagUrl: (tag) -> @site.url + "/tag/" + tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getPreparedCategoryUrl: (category) -> @site.url + "/category/" + category.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
 		getPreparedPostForkUrl: (doc) -> @production.github + "/src/documents/" + doc.relativePath
@@ -64,9 +68,15 @@ docpadConfig = {
 		nav: ->
 			@getCollection("html").findAllLive({nav: $exists: true},[{filename:1}])
 		posts: ->
+			parent = @
 			collection = @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:-1}])
 			collection.on "add", (model) ->
-				model.setMetaDefaults({active: "Archive", author: "tvjames"})
+				dateMoment = moment(model.get('date'))
+				model.setMetaDefaults({
+					active: "Archive",
+					author: "tvjames",
+					archiveYear: dateMoment.format('YYYY'),
+					archiveYearMonth: dateMoment.format('YYYY-MM')})
 		cleanurls: (database) ->
 			database.findAllLive() #({$or: {layout: {$exists: true}, layout: {$exists: true} }})
 
@@ -112,6 +122,17 @@ docpadConfig = {
 					layout: 'page'
 					data: """
 						<%- @partial('category', @) %>
+						"""
+				)
+		archive:
+			findCollectionName: 'posts'
+			relativeDirPath: ''
+			extension: '.html.eco'
+			injectDocumentHelper: (document) ->
+				document.setMeta(
+					layout: 'page'
+					data: """
+						<%- @partial('archives', @) %>
 						"""
 				)
 }

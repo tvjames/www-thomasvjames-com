@@ -1,0 +1,51 @@
+{
+  "name": "docpad-plugin-archive",
+  "version": "2.0.1",
+  "description": "Create archive pages within DocPad",
+  "homepage": "https://github.com/tvjames/docpad-plugin-archive",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+
+  },
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "docpad-importer",
+    "archive",
+    "blog"
+  ],
+  "author": "2014+ Thomas James <thomasvjames@gmail.com> (https://github.com/tvjames)",
+  "maintainers": [
+    "Thomas James <thomasvjames@gmail.com> (https://github.com/tvjames)"
+  ],
+  "contributors": [
+    "Thomas James <thomasvjames@gmail.com> (https://github.com/tvjames)"
+  ],
+  "bugs": {
+    "url": "https://github.com/tvjames/docpad-plugin-archive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tvjames/docpad-plugin-archive.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "docpad": ">=6.46 <7"
+  },
+  "devDependencies": {
+    "docpad": ">=6.46 <7",
+    "coffee-script": "~1.6.2"
+  },
+  "main": "./src/archive.plugin.coffee",
+  "scripts": {
+
+  },
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src"
+  }
+}

@@ -4,11 +4,17 @@ layout: null
 
 <ul class="side-nav">
 <% year = -1 %>
+<% month = -1 %>
 <% for post in @data.sortCollection([{date: -1}]).toJSON(): %>
 <%   date = @moment(post.date).utc() %>
-<%   if date.year() != year: %>
-<%   year = date.year() %>
-  <li class="heading"><%= date.year() %></li>
+<%   if @byYear and date.year() != year: %>
+<%     year = date.year() %>
+<%     month = -1 %>
+  <li class="heading"><a href="<%= @getPreparedArchiveUrl(date.format("YYYY")) %>"><%= date.format("YYYY") %></a></li>
+<%   end %>
+<%   if @byMonth and date.month() != month: %>
+<%     month = date.month() %>
+  <li class="heading"><a href="<%= @getPreparedArchiveUrl(date.format("YYYY/MM")) %>"><%= date.format("MMMM") %></a></li>
 <%   end %>
   <li>
 
