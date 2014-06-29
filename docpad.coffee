@@ -41,6 +41,7 @@ docpadConfig = {
 					href: (site) -> site.url + "/about"
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+		getPreparedUrl: (link) -> @site.url + link
 		getPreparedDisqusUrl: -> @production.url + @document.url
 		getPreparedDisqusShortname: -> @site.disqus.shortname
 		getPreparedRssUrl: -> @site.url + '/rss.xml'
@@ -109,6 +110,7 @@ docpadConfig = {
 			injectDocumentHelper: (document) ->
 				document.setMeta(
 					layout: 'page'
+					active: "Archive"
 					data: """
 						<%- @partial('tag', @) %>
 						"""
@@ -120,6 +122,7 @@ docpadConfig = {
 			injectDocumentHelper: (document) ->
 				document.setMeta(
 					layout: 'page'
+					active: "Archive"
 					data: """
 						<%- @partial('category', @) %>
 						"""
@@ -131,6 +134,7 @@ docpadConfig = {
 			injectDocumentHelper: (document) ->
 				document.setMeta(
 					layout: 'page'
+					active: "Archive"
 					data: """
 						<%- @partial('archives', @) %>
 						"""
