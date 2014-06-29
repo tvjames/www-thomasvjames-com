@@ -1,0 +1,14 @@
+---
+layout: null
+---
+
+<% if @document.breadcrumbs: %>
+  <ul class="breadcrumbs">
+    <% for breadcrumb in @document.breadcrumbs: %>
+      <li class="<%- 'current' if breadcrumb.current %>">
+        <a href="<%= @getPreparedUrl(breadcrumb.link) %>"><%= breadcrumb.title %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+&nbsp;

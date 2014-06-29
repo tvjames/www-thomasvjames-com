@@ -64,8 +64,17 @@ code {
   min-height: 20em;
 }
 
+.main ul.breadcrumbs {
+  margin-top: 1.0rem;
+  margin-bottom: 1.0rem;
+}
+
 .tag-cloud {
   font-family: 'Source Code Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.th.stackexchange {
+  box-shadow: none;
 }
 
 article header h3 {

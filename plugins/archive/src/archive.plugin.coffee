@@ -67,6 +67,7 @@ module.exports = (BasePlugin) ->
 			# Listen for year-month archive-able pages
 			docpad.getCollection(config.findCollectionName).findAllLive({archiveYearMonth: $exists: true}).on 'add', (model) ->
 				# Prepare
+				archiveForYear = model.get('archiveYear') or ""
 				archiveForYearMonth = model.get('archiveYearMonth') or ""
 
 				console.log "extendCollections collection found #{archiveForYearMonth} #{model.get('filename')}"
@@ -76,7 +77,7 @@ module.exports = (BasePlugin) ->
 
 				# Add the document tags to the index
 				path = archiveForYearMonth.replace(/-/g, '/')
-				plugin.archives[archiveForYearMonth] ?= plugin.createArchiveDocument null, archiveForYearMonth, path, (err) ->
+				plugin.archives[archiveForYearMonth] ?= plugin.createArchiveDocument archiveForYear, archiveForYearMonth, path, (err) ->
 					docpad.error(err)  if err
 
 				# Complete
@@ -88,7 +89,7 @@ module.exports = (BasePlugin) ->
 
 		# Create Tag Document
 		createArchiveDocument: (year, yearMonth, path, next) ->
-			console.log "Creating archive page for #{year ? yearMonth} at #{path}"
+			console.log "Creating archive page for #{yearMonth ? year } at #{path}"
 
 			# Prepare
 			plugin = @
@@ -103,7 +104,7 @@ module.exports = (BasePlugin) ->
 				data: JSON.stringify({archiveForYear:year, archiveForYearMonth: yearMonth}, null, '\t')
 				meta:
 					mtime: new Date()
-					title: "Archive for #{year ? yearMonth}"
+					title: "Archive for #{yearMonth ? year}"
 					archivePath: path
 					archiveForYear: year
 					archiveForYearMonth: yearMonth
@@ -130,7 +131,7 @@ module.exports = (BasePlugin) ->
 				docpad.addModel?(document) or docpad.getDatabase().add(document)
 
 				# Log
-				docpad.log(config.logLevel, "Created archive page for #{year ? yearMonth} (#{path}) at #{document.getFilePath()}")
+				docpad.log(config.logLevel, "Created archive page for #{yearMonth ? year} (#{path}) at #{document.getFilePath()}")
 
 				# Complete
 				return next()

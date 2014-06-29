@@ -132,9 +132,22 @@ docpadConfig = {
 			relativeDirPath: ''
 			extension: '.html.eco'
 			injectDocumentHelper: (document) ->
+				breadcrumbs = []
+				breadcrumbs.push {title: "Archive", link: "/archive"}
+				if (document.get("archiveForYear"))
+					breadcrumbs.push {
+						title: "#{document.get('archiveForYear')}",
+						link: "/#{document.get('archiveForYear')}",
+						current: true unless document.get("archiveForYearMonth") }
+				if (document.get("archiveForYearMonth"))
+					breadcrumbs.push {
+						title: document.get("archiveForYearMonth")
+						link: "/#{document.get('archivePath')}"
+						current: true }
 				document.setMeta(
 					layout: 'page'
 					active: "Archive"
+					breadcrumbs: breadcrumbs
 					data: """
 						<%- @partial('archives', @) %>
 						"""
