@@ -209,6 +209,10 @@
     "BuildDeployUserKeysAccessKeySecret": {
         "Value": { "Fn::GetAtt": ["BuildDeployUserKeys", "SecretAccessKey"] }
     },
+    "QueueName" : {
+      "Value" : { "Ref": "BuildReadyNotificationsQueue" },
+      "Description" : "ARN of SQS Queue"
+    },
     "QueueArn" : {
       "Value" : { "Fn::GetAtt" : [ "BuildReadyNotificationsQueue", "Arn" ]},
       "Description" : "ARN of SQS Queue"
