@@ -26,7 +26,7 @@ layout: default
       </ul>
     </section>
     <% end %>
-    <section class="tag-cloud" title="Tags">
+    <section class="tag-cloud">
       <p>
         <% for tag, data of @getTagCloud(): %>
           <a href="<%= data.url %>" data-tag-count="<%= data.count %>" data-tag-weight="<%= data.weight %>"rel="<%= data.count %>">
@@ -35,7 +35,7 @@ layout: default
         <% end %>
       </p>
     </section>
-    <section class="twitter" title="Twitter">
+    <section class="twitter">
       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/thomasvjames" data-widget-id="480610446861275136">Tweets by @thomasvjames</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
       </script>
