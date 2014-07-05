@@ -1,4 +1,6 @@
-# Your [DocPad](http://docpad.org) Project
+# thomasvjames.com
+
+Built using docpad.
 
 [![Build Status](https://travis-ci.org/tvjames/www-thomasvjames-com.png)](https://travis-ci.org/tvjames/www-thomasvjames-com)
 
