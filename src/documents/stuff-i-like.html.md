@@ -47,11 +47,11 @@ The first of many games that I've backed on kickstarter.
 
 Interesting approach to a smart beacon. Lots of idea, however they're still just sitting on my desk.
 
-[Planetary Annihilation - A Next Generation RTS](http://www.kickstarter.com/projects/659943965/planetary-annihilation-a-next-generation-rts) **Funded**
+[Planetary Annihilation - A Next Generation RTS](http://www.kickstarter.com/projects/659943965/planetary-annihilation-a-next-generation-rts) **Shipped**
 
 As a long time fan of Total Annihilation this one caught my interest right off the bat. I had no choice but to back it. And how can anyone say "no" to blowing up planets TA style?
 
-[Parallella: A Supercomputer For Everyone](http://www.kickstarter.com/projects/adapteva/parallella-a-supercomputer-for-everyone) **Funded** _Delayed_
+[Parallella: A Supercomputer For Everyone](http://www.kickstarter.com/projects/adapteva/parallella-a-supercomputer-for-everyone) **Shipped** 
 
 I've always been interested in embedded development of all sorts. This one looked like an interesting project and an opportunity to try out FPGA development, which is something I've not done before. I do hope they'll be able to overcome their production issues and eventually ship.
 
@@ -75,7 +75,7 @@ Can you see a trend here?
 
 As a long time fan and owner of multiple netduino devices, I couldn't go past the opportunity to back a .net micro-framework / C# powered smart watch, no matter how happy I am with the Pebble. Appears to be on track to ship no too long after the target date as well.
 
-[Chineasy: The easiest way to learn Chinese](http://www.kickstarter.com/projects/shaolanchineasy/chineasy-begins-0) **Funded**
+[Chineasy: The easiest way to learn Chinese](http://www.kickstarter.com/projects/shaolanchineasy/chineasy-begins-0) **Shipped**
 
 Just a long line, in a somewhat futile attempt, to better learn and understand the language, culture and ancestry of my "better-half". I'm looking forward to adding a few extra characters to my limited repertoire.
 
@@ -87,25 +87,65 @@ Cheap, low-risk approach to trying to tidy some cables.
 
 Myst, my first game on CD and something that really spurned my imagination, Obduction is a modern "follow up" by the same creators of the earlier masterpieces. This game could not be ready to play soon enough. I want now!
 
-[KeyZ - Bulky Keys Made Easy](http://www.kickstarter.com/projects/key-z/keyz-bulky-keys-made-easy) **Will be funded**
+[KeyZ - Bulky Keys Made Easy](http://www.kickstarter.com/projects/key-z/keyz-bulky-keys-made-easy) **Shipped**
 
 Interesting retake of the humble keyring. Combined with a multi-tool :)
 
-[Lavabit's Dark Mail Initiative](http://www.kickstarter.com/projects/ladar/lavabits-dark-mail-initiative) **Pending** _Not looking likely to be funded_
+[Lavabit's Dark Mail Initiative](http://www.kickstarter.com/projects/ladar/lavabits-dark-mail-initiative) **Funded**
 
 Happy to throw a few dollars behind this initiative.
 
-[NINJA SPHERE: Next Generation Control of Your Environment](http://www.kickstarter.com/projects/ninja/ninja-sphere-next-generation-control-of-your-envir) **Will be funded**
+[NINJA SPHERE: Next Generation Control of Your Environment](http://www.kickstarter.com/projects/ninja/ninja-sphere-next-generation-control-of-your-envir) **Funded**
 
 After the success of the original ninja block, started by the guy behind Sydney electronics outfit - Little Bird Electronics, I'm not missing out of version 2.
 
-[Touch Board: Interactivity Everywhere](Touch Board: Interactivity Everywhere) **Will be funded**
+[Touch Board: Interactivity Everywhere](Touch Board: Interactivity Everywhere) **Funded**
 
 Having too many random arduinos, netduinos, rPIs & other things around the house. What's one more?
 
-[nio Card - Slims down your wallet and upgrades your phone](http://www.kickstarter.com/projects/1459210729/nio-card-a-smart-card-which-upgrades-your-phone-an) **Pending** _Could go either way_
+[nio Card - Slims down your wallet and upgrades your phone](http://www.kickstarter.com/projects/1459210729/nio-card-a-smart-card-which-upgrades-your-phone-an) **Failed** _Could go either way_
 
 Lots of potential.
+
+[FOLDIO - The 1st foldable studio for Smartphone](https://www.kickstarter.com/projects/orangemonkie/foldio-the-1st-foldable-studio-for-smartphone) **Shipped** 
+
+Awesome little portable photo studio. 
+
+[Smart Power Strip- Control your appliances from anywhere](https://www.kickstarter.com/projects/337922278/smart-power-strip-control-your-appliances-from-any)  **Funded** 
+
+Should be shipping soon hopefully. Looking forward to the remote control.
+
+[miggo - camera's best amigo](https://www.kickstarter.com/projects/580723045/miggo-cameras-best-amigo) **Shipped** 
+
+Fantastic camera strap, perfect size for the Canon EOS M.
+
+[The Dash – Wireless Smart In Ear Headphones](https://www.kickstarter.com/projects/hellobragi/the-dash-wireless-smart-in-ear-headphones) **Funded**
+
+It will be interesting to see how practical these turn out to be. 
+
+[Pono Music - Where Your Soul Rediscovers Music](https://www.kickstarter.com/projects/1003614822/ponomusic-where-your-soul-rediscovers-music) **Funded**
+
+Just because. 
+
+[MAGNOTE - The Notebook Reinvented](https://www.kickstarter.com/projects/orangemonkie/magnote-the-notebook-reinvented) **Cancelled**
+
+Could have been interesting. 
+
+[Sherlybox - turn your public clouds into private & unlimited](https://www.kickstarter.com/projects/sherly/sherlybox-a-private-and-shareable-cloud-on-your-de) **Funded**
+
+[Black Tie, the new multi-weight icon font from Font Awesome](https://www.kickstarter.com/projects/232193852/font-awesome-black-tie) **Funded**
+
+I use font-awesome pretty much every day. Why not give back a little. 
+
+[Sense: Know More. Sleep Better.](https://www.kickstarter.com/projects/hello/sense-know-more-sleep-better) **Funded**
+
+Always good to know more about my sleep patterns. 
+
+[Navdy](http://www.navdy.com/) **Ordered**
+
+An in-car HUD is something that I've always thought would be pretty darn cool. Can't wait to have one. 
+
+
 
 ### Others
 
