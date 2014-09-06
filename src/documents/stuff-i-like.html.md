@@ -141,14 +141,14 @@ I use font-awesome pretty much every day. Why not give back a little.
 
 Always good to know more about my sleep patterns. 
 
-[Navdy](http://www.navdy.com/) **Ordered**
-
-An in-car HUD is something that I've always thought would be pretty darn cool. Can't wait to have one. 
-
-
 
 ### Others
 
 [Coin](https://onlycoin.com/) **Preorder**
 
 Developed for the american market, where magnetic stipe cards are the latest-and-greatest, this little device provides a dynamic approach loading and restoring the strip data based on the card you choose from your phone. I wont be putting my credit card into this, but might be a great way to get rid of a lot of loyalty cards.
+
+[Navdy](http://www.navdy.com/) **Preorder**
+
+An in-car HUD is something that I've always thought would be pretty darn cool. Can't wait to have one. 
+
