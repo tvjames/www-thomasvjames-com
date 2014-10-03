@@ -99,7 +99,7 @@ Happy to throw a few dollars behind this initiative.
 
 After the success of the original ninja block, started by the guy behind Sydney electronics outfit - Little Bird Electronics, I'm not missing out of version 2.
 
-[Touch Board: Interactivity Everywhere](Touch Board: Interactivity Everywhere) **Funded**
+[Touch Board: Interactivity Everywhere](https://www.kickstarter.com/projects/863853574/touch-board-interactivity-everywhere) **Funded**
 
 Having too many random arduinos, netduinos, rPIs & other things around the house. What's one more?
 
