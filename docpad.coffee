@@ -64,7 +64,7 @@ docpadConfig = {
 		pages: ->
 			collection = @getCollection("html").findAllLive({title: $exists: true})
 			collection.on "add", (model) ->
-					model.setMetaDefaults({layout:"default"})
+					model.setMetaDefaults({layout:"default", description: "Thomas James, just a geek. A Blog about Technology, Gadgetry, Photography and Software Development."})
 		nav: ->
 			@getCollection("html").findAllLive({nav: $exists: true},[{filename:1}])
 		posts: ->

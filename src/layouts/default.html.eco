@@ -6,6 +6,9 @@
     <script src="<%- @site.url %>/js/vendor/modernizr.js"></script>
 
     <title><%= @getPreparedTitle() %></title>
+    <% if @document.description: %>
+    <meta name="description" content="<%= @document.description %>" />
+    <% end %>
 
     <%- @getBlock("meta").toHTML() %>
 
