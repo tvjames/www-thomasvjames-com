@@ -1,6 +1,6 @@
 ---
 author: tvjames
-date: 2015-02-14 20:43:00+10:00
+date: 2015-02-14 20:44:00+10:00
 layout: post
 slug: brewsmith-homebrew
 title: Brew Smith Kit - Hoppy Heart IPA; My first attempt at home brew
