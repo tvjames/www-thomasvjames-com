@@ -41,6 +41,14 @@ On the boil, followed by the boil-*over* :(
 ![The boil over aftermath](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_2683_zpss8jtkfgv.jpg "The boil over aftermath")
 
 It's now sitting in a cupboard for the next 2 days until the last of the hops go in. I'm looking forward to seeing how it turns out. 
+
+---
+
+48 hours later, the magic is happening. 
+
+![Airlock installed](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_2694_zpsaktenzrz.jpg "Bubble away")
+
+---
  
 Will let you know how it tastes in 3 weeks.
 
