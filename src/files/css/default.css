@@ -77,6 +77,10 @@ code {
   box-shadow: none;
 }
 
+.postmetadata .inline-list {
+  margin-bottom: 0;
+}
+
 article header h3 {
   margin-bottom: 0;
 }

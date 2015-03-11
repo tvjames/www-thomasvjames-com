@@ -8,8 +8,11 @@ layout: null
     <aside class="right">
       <div class="pic"><img alt="Gravatar for <%= author.name %>" src="<%- @getGravatarUrl(author.email, 50, 'retro', 'X') %>" class="avatar avatar-50 photo" height="50" width="50"></div>
     </aside>
-    <h3><a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a> <small><a href="<%- @getPreparedPostForkUrl(@data) %>" title="Edit this post on GitHub.com and submit an improvement. "><i class="fa fa-code-fork"></i></a></small></h3>
-    <small><a href="<%- @getPreparedArchiveUrl(@moment(@data.date).format('YYYY/MM')) %>"><time pubdate datetime="<%= @moment(@data.date).toISOString() %>" title="<%= @moment(@data.date).toISOString() %>"><%= @moment(@data.date).format("LLLL ZZ") %></time></a></small>
+    <h3>
+      <a href="<%- @data.url %>" rel="bookmark" title="Permanent Link to <%= @data.title %>"><%= @data.title or "Error: missing title :("%></a> 
+      <small><a href="<%- @getPreparedPostForkUrl(@data) %>" title="Edit this post on GitHub.com and submit an improvement. "><i class="fa fa-code-fork"></i></a></small>
+    </h3>
+    <small><a href="<%- @getPreparedArchiveUrl(@moment(@data.date).format('YYYY/MM')) %>"><time  datetime="<%= @moment(@data.date).toISOString() %>" title="<%= @moment(@data.date).toISOString() %>"><%= @moment(@data.date).format("LLLL ZZ") %></time></a></small>
     <small>by <a href="<%- author.href(@site) %>" title="Posts by <%= author.name %>" rel="author"><%= author.name %></a></small>
   </header>
   <section>
@@ -18,30 +21,36 @@ layout: null
   <footer>
     <% if @data.categories?.length: %>
       <section class="categories postmetadata">
-        <small>
+        
           <ul class="inline-list">
-            <li class="heading">Categories: </li>
-            <% for category in @data.categories: %><li><a href="<%- @getPreparedCategoryUrl(category) %>" rel="category"><%= category %></a></li><% end %>
+            <li class="heading"><small>Categories: </small></li>
+            <% for category in @data.categories: %><li><small><a href="<%- @getPreparedCategoryUrl(category) %>" rel="category"><%= category %></a></small></li><% end %>
           </ul>
-        </small>
+        
       </section>
     <% end %>
 
     <% if @data.tags?.length: %>
       <section class="tags postmetadata">
-        <small>
-          <ul class="inline-list">
-            <li class="heading">Tags: </li>
-            <% for tag in @data.tags: %><li><a href="<%- @getPreparedTagUrl(tag) %>" rel="tag"><%= tag %></a></li><% end %>
-          </ul>
-        </small>
+        
+        <ul class="inline-list">
+          <li class="heading"><small>Tags: </small></li>
+          <% for tag in @data.tags: %>
+            <% if @sumaryOnly: %>
+              <li><small><a href="<%- @getPreparedTagUrl(tag) %>"><%= tag %></a></small></li>
+            <% else: %> 
+              <li><small><a href="<%- @getPreparedTagUrl(tag) %>" rel="tag"><%= tag %></a></small></li>
+            <% end %>
+          <% end %>
+        </ul>
+        
       </section>
     <% end %>
 
     <% if (not @sumaryOnly) and (not @data.commentsDisabled): %>
-      <p class="postmetadata">
+      <div class="postmetadata">
         <div id="disqus_thread"></div>
-      </p>
+      </div>
     <% end %>
 
     <% if (not @sumaryOnly): %>

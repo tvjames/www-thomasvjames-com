@@ -110,8 +110,8 @@
     <div class="row footer">
       <div class="large-12 columns">
         <p class="text-center"><small>© Thomas James 2010 - <%= @moment().format("YYYY") %> - Some Rights Reserved - <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"></a></small><br /><small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></small></p>
-        <p class="text-center">
-          <!-- Start of StatCounter Code for Default Guide -->
+        <div class="text-center">
+<!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=9508780;
 var sc_invisible=0;
@@ -122,13 +122,15 @@ document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<noscript><div class="statcounter"><a title="web counter"
+<noscript>
+<div class="statcounter"><a title="web counter"
 href="http://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="http://c.statcounter.com/9508780/0/355a325f/0/"
-alt="web counter"></a></div></noscript>
+alt="web counter" /></a></div>
+</noscript>
 <!-- End of StatCounter Code for Default Guide -->
-        </p>
+        </div>
       </div>
     </div>
 

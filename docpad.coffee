@@ -55,8 +55,8 @@ docpadConfig = {
 		getGravatarUrl: (email, size, type, rating) ->
 			hash = require('crypto').createHash('md5').update(email).digest('hex')
 			url = "//www.gravatar.com/avatar/#{hash}?"
-			if size then url += "s=#{size}&"
-			if type then url += "d=#{type}&"
+			if size then url += "s=#{size}&amp;"
+			if type then url += "d=#{type}&amp;"
 			if rating then url += "r=#{rating}"
 			return url
 
