@@ -83,6 +83,7 @@ docpadConfig = {
 	plugins:
 		cleanurls:
 			collectionName: 'cleanurls'
+			trailingSlashes: true
 		moment:
 			formats: [
 				{raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
