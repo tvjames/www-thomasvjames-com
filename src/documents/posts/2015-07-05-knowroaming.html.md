@@ -42,4 +42,8 @@ That said, for somewhere like Singapore the $7.99 per day is far cheaper and eas
 
 Overall I was very happy with the product, it delivered it's promises & the customer service from KnowRoaming was excellent. It made it very easy to keep in contact with others regardless of the country we were and without costing a fortune in roaming fees. I'll be using it again on my next trip overseas. 
 
+---
+
+Update: KnowRoaming just announced a referral program. So if you want [30% off your SIM Sticker purchase, $5 in credit & grant me $5 in credit, just follow this link](https://www.knowroaming.com/order/order.php) then use my referral code `THOJAM754` when you place the order, thanks :) 
+
 
