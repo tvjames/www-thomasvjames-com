@@ -24,13 +24,15 @@ Having recently received my kickstarted GLocalMe G2 Global Roaming device & with
     - Google Nexus 6 
     - MacBook Pro Retina 13" 2015 model
 
-Each device will use the native speedtest for that platform, the dongles will be running on USB power during the test. The speedtest results for the iPhone running direct & as a hotspot on the Telstra network will be included for reference. The devices were placed on the same desk, beside each other. 
+Each device will use the native speedtest for that platform, the dongles will be running on USB power during the test. The speedtest results for the iPhone running direct & as a hotspot on the Telstra network will be included for reference. The devices were placed on the same desk, beside each other. Speedtest Beta was used in Chrome on the MacBook. 
 
 ## ZTE MF91
 
+```
 LTE: 1800, 2600 MHz with up to 40Mbps data
 UMTS: 850, 900, 2100 MHz with up to 21Mbps data
 WiFi: 802.11 b/g/n
+```
 
 This has been my "go to" device for a few years now. It's been exceptionally reliable (even if the admin portal is terrible) with excellent battery life for a full day of sporadic usage. It's also the lightest of the 3 dongles. 
 
@@ -43,9 +45,12 @@ This has been my "go to" device for a few years now. It's been exceptionally rel
 
 ## Netgear AirCard 760S
 
-LTE: 1800/2100/2600 MHz up to 100 Mbps download, up to 50 Mbps upload (LTE Catagory 3)
+```
+LTE: 1800/2100/2600 MHz up to 100 Mbps download, 
+     up to 50 Mbps upload (LTE Catagory 3)
 UMTS: Dual-Carrier HSPA+ 850/900/2100 MHz 
 WiFi: 802.11 b/g/n
+```
 
 | Test Device   | Ping  | Download   | Upload     |
 | ------------- | ----- | ---------- | ---------- |
@@ -56,11 +61,13 @@ WiFi: 802.11 b/g/n
 
 ## GLocalMe G2
 
+```
 UMTS Band 1/2/4/5/8 
 LTE-FDD Band 1/3/5/7/8/17/20 
 LTE-TDD Band 39/40/41 
 GSM 850/900/1800/1900MHz
 WiFi: 802.11 b/g/n
+```
 
 This is quite an interesting device, it includes a built in sim card (a "cloud sim") which is used for the GLocalMe global roaming service and two additional micro-sim slots. The 6000 mAH battery is a nice plus. 
 
