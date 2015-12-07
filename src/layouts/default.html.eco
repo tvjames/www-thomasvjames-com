@@ -109,7 +109,9 @@
 
     <div class="row footer">
       <div class="large-12 columns">
-        <p class="text-center"><small>© Thomas James 2010 - <%= @moment().format("YYYY") %> - Some Rights Reserved - <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"></a></small><br /><small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></small></p>
+        <p class="text-center"><small>© Thomas James 2010 - <%= @moment().format("YYYY") %> - Some Rights Reserved - <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"></a></small><br /><small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></small>
+          <span style="float: right;"><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a></span>
+        </p>
         <div class="text-center">
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
