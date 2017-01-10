@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {{ .Hugo.Generator }}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+
+    <title>{{ .Title }}</title>
+    <meta property='og:title' content="{{ .Title }}">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    
+  </head>
+
+  <body>
+
+    <header class="site">
+      <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+    </header>
+
+    <div class="container site">
+
+        <div class="list">
+          <div class="row">
+            <div class="col-sm-9">
+
+              <header class="title"><h1>{{ .Title }}</h1></header>
+
+              <div class="articles">
+                <div class="row">
+                  {{ range (.Paginate .Data.Pages).Pages }}
+                  <div class="col-sm-4">
+                    {{ .Render "li" }}
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+
+              {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+              <nav class="paging">
+                {{ if .Paginator.HasPrev }}
+                <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}" class="left" rel="prev">PREV</a>
+                {{ end }}
+
+                {{ if .Paginator.HasNext }}
+                <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}" class="right" rel="next">NEXT</a>
+                {{ end }}
+              </nav>
+              {{ end }}
+
+            </div>
+
+            
+          </div>
+        </div>
+
+
+    </div>
+
+  </body>
+</html>

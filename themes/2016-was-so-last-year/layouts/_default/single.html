@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {{ .Hugo.Generator }}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+
+    <title>{{ .Title }}</title>
+    <meta property='og:title' content="{{ .Title }}">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    
+  </head>
+
+  <body>
+
+    <header class="site">
+      <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+    </header>
+
+    <div class="container site">
+
+<article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="{{ .Site.BaseURL }}"/>
+        <meta itemprop="dateModified" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+        <meta itemprop="headline" content="{{ .Title }}">
+        <meta itemprop="description" content="{{ .Summary }}">
+        <meta itemprop="url" content="{{ .Permalink }}">
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="{{ .Site.Params.Author }}">
+        </div>
+
+        \<header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
+          <h1 class="article-title">{{ .Title }}</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          {{ .Content }}
+        </div>
+
+
+        
+
+      </article>
+
+    </div>
+
+  </body>
+</html>

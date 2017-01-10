@@ -1,3 +1,8 @@
 languageCode = "en-us"
 title = "thomasvjames.com"
 baseurl = "http://www.thomasvjames.com"
+theme = "2016-was-so-last-year"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
