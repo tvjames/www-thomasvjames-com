@@ -24,18 +24,15 @@
 
     <div class="container site">
 
-    {{ range where .Data.Pages "Title" "index" }}
-        {{ .Content }}
-    {{ end }}
+    {{ .Content }}
 
 <div class="index">
   <div class="row">
     <div class="col-sm-9">
 
-      <div class="articles">
+      <div class="archives">
         <div class="row">
-          {{ range $key, $value := .Paginator.Pages }}
-          <div class="col-sm-{{ if lt $key 4 }}6{{ else }}4{{ end }}">
+          {{ range .Site.Pages }}
             <article class="li">
               <a href="{{ .Permalink }}" class="clearfix">
                 <time>{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
@@ -45,22 +42,10 @@
               </a>
             </article>
 
-          </div>
           {{ end }}
         </div>
       </div>
 
-      {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-      <nav class="paging">
-        {{ if .Paginator.HasPrev }}
-        <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}" class="left" rel="prev">PREV</a>
-        {{ end }}
-
-        {{ if .Paginator.HasNext }}
-        <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}" class="right" rel="next">NEXT</a>
-        {{ end }}
-      </nav>
-      {{ end }}
 
 
     </div>
