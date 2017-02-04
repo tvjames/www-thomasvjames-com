@@ -9,35 +9,23 @@
     {{ partial "layout-header.html" . }}
     {{ partial "layout-navigation.html" . }}
 
-    {{ $link := .Data.Singular | print "/" | urlize }}
-    {{ $n1 := dict "title" .Data.Singular "link" $link "current" true}}
-    {{ .Scratch.Set "breadcrumbs" (slice $n1) }}
-    
+    {{ $link := .Data.Plural | print "/" | urlize }}
+    {{ $n1 := dict "title" "Archive" "link" "/archive" }}
+    {{ $n2 := dict "title" .Data.Plural "link" $link }}
+    {{ $n3 := dict "title" .Title "link" (.Title | urlize | print $link "/") "current" true }}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1 $n2 $n3) }}
+
     <div class="row main">
       <div class="large-12 columns">
 
         <div class="row">
           <div class="large-9 columns">
             <div class="right">{{ partial "breadcrumbs.html" . }}</div>
-            <h2>{{ .Title }}</h2>
-
+            <h2>Archive for <span class="subheader">{{ .Data.Plural }}-{{ .Title }}</span>:</h2>
+            
             {{ .Content }}
 
-<ul class="side-nav">
-  {{ $data := .Data }}
-  {{ range $key, $value := .Data.Terms.Alphabetical.Reverse }}
-    <li class="heading">
-      <a href="/{{ $value.Name | urlize }}" title="{{ $value.Name }}">
-        <span class="secondary radius label right">
-          {{ $value.Count }}
-        </span>
-        {{ $value.Name }}
-      </a>
-    </li>
-    {{ partial "list-posts.html" $value.Pages.ByDate }}
-  {{ end }}
-</ul>
-
+            {{ partial "posts.html" .Data.Pages }}
           </div>
           <div class="large-3 columns">
             {{ partial "sidebar.html" . }}

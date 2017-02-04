@@ -16,7 +16,7 @@
             <ul class="left">
               {{ $permalink := $.Permalink }}
               {{ range where $.Site.Pages.ByTitle "Section" "page" }}
-                  <li class="{{ if eq .Permalink $permalink }}active{{ else }}inactive{{ end }}">
+                  <li class="{{ if or (eq .Permalink $permalink) (eq (print .Permalink "/") $permalink) }}active{{ else }}inactive{{ end }}">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                   </li>
               {{ end }}

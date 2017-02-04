@@ -7,3 +7,4 @@
 
 # Makin it work
 /archive/*                  /:splat
+/author/*                   /about
