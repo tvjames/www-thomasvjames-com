@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "html-head-meta.html" . }}
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+  </head>
+  <body>
+    {{ partial "layout-header.html" . }}
+    {{ partial "layout-navigation.html" . }}
+
+    {{ $link := .Data.Plural | print "/" | urlize }}
+    {{ $n1 := dict "title" "Archive" "link" "/archive" }}
+    {{ $n2 := dict "title" .Data.Plural "link" $link }}
+    {{ $n3 := dict "title" .Title "link" (.Title | urlize | print $link "/") "current" true }}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1 $n2 $n3) }}
+
+    <div class="row main">
+      <div class="large-12 columns">
+
+        <div class="row">
+          <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            <h2>Archive for <span class="subheader">{{ .Data.Plural }}-{{ .Title }}</span>:</h2>
+            
+            {{ .Content }}
+
+            {{ partial "posts.html" .Data.Pages }}
+          </div>
+          <div class="large-3 columns">
+            {{ partial "sidebar.html" . }}
+          </div>
+        </div>
+        <hr />
+
+      </div>
+    </div>
+
+    {{ partial "layout-footer.html" . }}
+    {{ partial "layout-script.html" . }}
+  </body>
+</html>

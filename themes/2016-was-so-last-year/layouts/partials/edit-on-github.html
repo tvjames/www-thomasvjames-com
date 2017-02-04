@@ -1,0 +1,2 @@
+{{ $url := slice $.Site.Params.repo.url "tree/master" "content" .File.Path }}
+<a href="{{ delimit $url "/" }}" title="Edit this post in {{ $.Site.Params.repo.name }} on GitHub.com and submit an improvement. "><i class="fa fa-code-fork"></i></a>

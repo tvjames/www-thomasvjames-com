@@ -1,0 +1,8 @@
+<ul class="side-nav">
+  {{ range .GroupByDate "2006/01 January" }}
+    {{ $yearMonth := substr .Key 0 7 }}
+    {{ $title := substr .Key 8 }}
+    <li class="heading"><a href="/{{ $yearMonth }}"><span class="secondary radius label right">{{ len .Pages }}</span>{{ $title }}</a></li>
+    {{ partial "list-posts.html" .Pages }}
+  {{ end }}
+</ul>

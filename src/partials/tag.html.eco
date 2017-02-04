@@ -1,7 +1,0 @@
----
-layout: null
----
-
-<h2>Pages with tag <span class="subheader"><%= @document.tag %></span>:</h2>
-
-<%- @partial('posts', {data: @getFiles(tags: $has: @document.tag)}) %>

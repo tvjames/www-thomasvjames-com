@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "html-head-meta.html" . }}
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+  </head>
+  <body>
+    {{ partial "layout-header.html" . }}
+    {{ partial "layout-navigation.html" . }}
+
+    <div class="row main">
+      <div class="large-12 columns">
+
+        <div class="row">
+          <div class="large-9 columns">
+            {{ partial "author.html" . }}
+            <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+              {{ partial "post-metadata.html" . }}
+              {{ with .Params.image }}
+              <div class="image" style="background-image: url({{ $.Site.BaseURL }}{{ . }});"></div>
+              {{ end }}
+              {{ partial "post-header.html" . }}
+              {{ partial "post-content.html" . }}
+              {{ partial "post-footer.html" . }}
+            </article>
+
+
+          </div>
+          <div class="large-3 columns">
+            {{ partial "sidebar.html" . }}
+          </div>
+        </div>
+        <hr />
+
+      </div>
+    </div>
+
+    {{ partial "layout-footer.html" . }}
+    {{ partial "layout-script.html" . }}
+  </body>
+</html>

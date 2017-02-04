@@ -1,0 +1,16 @@
+# Sitemap 
+
+/
+    about/ ✔
+    archive/ ✔
+    projects/ ✔
+    stuff-i-like/ ✔
+    photography/ --> http://photography-of.thomasvjames.com
+
+    :year/:month/:slug/
+    :year/
+    :year/:month/
+
+    tag/:tag/
+    category/:category/
+

@@ -1,8 +1,8 @@
 # thomasvjames.com
 
-Built using [docpad](http://docpad.org/).
+Built with [hugo](https://gohugo.io/), previously [docpad](http://docpad.org/).
 
-[![Build Status](https://travis-ci.org/tvjames/www-thomasvjames-com.png)](https://travis-ci.org/tvjames/www-thomasvjames-com)
+Automatically built & hosted by [netlify](https://www.netlify.com/).
 
 ## License
 Copyright &copy; 2014+ Thomas James Some Rights Reserved.

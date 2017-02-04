@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "html-head-meta.html" . }}
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+  </head>
+  <body>
+    {{ partial "layout-header.html" . }}
+    {{ partial "layout-navigation.html" . }}
+
+    <div class="row main">
+      <div class="large-12 columns">
+
+        <div class="row">
+          <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            {{ .Content }}
+          </div>
+          <div class="large-3 columns">
+            {{ partial "sidebar.html" . }}
+          </div>
+        </div>
+        <hr />
+
+      </div>
+    </div>
+
+    {{ partial "layout-footer.html" . }}
+    {{ partial "layout-script.html" . }}
+  </body>
+</html>

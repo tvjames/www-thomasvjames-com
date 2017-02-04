@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "html-head-meta.html" . }}
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+  </head>
+  <body>
+    {{ partial "layout-header.html" . }}
+    {{ partial "layout-navigation.html" . }}
+
+    {{ $link := .Data.Singular | print "/" | urlize }}
+    {{ $n1 := dict "title" .Data.Singular "link" $link "current" true}}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1) }}
+    
+    <div class="row main">
+      <div class="large-12 columns">
+
+        <div class="row">
+          <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            <h2>{{ .Title }}</h2>
+
+            {{ .Content }}
+
+<ul class="side-nav">
+  {{ $data := .Data }}
+  {{ range $key, $value := .Data.Terms.Alphabetical.Reverse }}
+    <li class="heading">
+      <a href="/{{ $value.Name | urlize }}" title="{{ $value.Name }}">
+        <span class="secondary radius label right">
+          {{ $value.Count }}
+        </span>
+        {{ $value.Name }}
+      </a>
+    </li>
+    {{ partial "list-posts.html" $value.Pages.ByDate }}
+  {{ end }}
+</ul>
+
+          </div>
+          <div class="large-3 columns">
+            {{ partial "sidebar.html" . }}
+          </div>
+        </div>
+        <hr />
+
+      </div>
+    </div>
+
+    {{ partial "layout-footer.html" . }}
+    {{ partial "layout-script.html" . }}
+  </body>
+</html>

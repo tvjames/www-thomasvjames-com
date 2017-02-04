@@ -1,0 +1,61 @@
+<div class="row base ">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-4 columns text-right">
+        &nbsp;
+      </div>
+      {{ with $.Site.Author.social }}
+      <div class="large-4 columns text-center">
+        <ul class="side-nav">
+          <li class="heading"><i class="fa fa-empire"></i> social</li>
+          {{ with .twitter }}
+          <li><a href="https://twitter.com/{{.}}"><i class="fa fa-twitter"></i> twitter - @{{ . }}</a></li>
+          {{ end }}
+          {{ with .github }}
+          <li><a href="https://github.com/{{.}}"><i class="fa fa-github"></i> github - {{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      <div class="large-4 columns text-left">
+        <ul class="side-nav">
+          <li class="heading"><i class="fa fa-paper-plane"></i> stay in touch</li>
+          <li><a href="{{ .Site.BaseURL }}/index.xml"><i class="fa fa-rss-square"></i> RSS Feed</a></li>
+          {{ with $.Site.Author }}
+          {{ with .email }}<li><a href="mailto:{{ . }}"><i class="fa fa-envelope-square"></i> Send me an email</a></li>{{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="large-12 columns">
+    <p class="text-center"><small>© {{ $.Site.Author.name }} 2010 - {{ $.Site.LastChange.Format "2006" }} - Some Rights Reserved - <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0;margin:0;" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"></a></small>
+    <br /><small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></small>
+      <span style="float: right;"><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="https://cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a></span>
+    </p>
+    <div class="text-center">
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9508780;
+var sc_invisible=0;
+var sc_security="355a325f";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+<div class="statcounter"><a title="web counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9508780/0/355a325f/0/"
+alt="web counter" /></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+    </div>
+  </div>
+</div>

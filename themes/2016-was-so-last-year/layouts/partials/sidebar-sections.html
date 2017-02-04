@@ -1,0 +1,12 @@
+{{ range . }}
+<section>
+  <ul class="side-nav">
+    <li class="heading">{{ .title }}</li>
+    {{ with .links }}
+    {{ range . }}
+    <li><a href="{{ .href }}" title="{{ .alt }}">{{ .text }}</a></li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

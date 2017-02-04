@@ -1,0 +1,6 @@
+<ul class="side-nav">
+{{ range .GroupByDate "2006" }}
+  <li class="heading"><a href="/{{ .Key }}"><span class="secondary radius label right">{{ len .Pages }}</span>{{ .Key }}</a></li>
+  {{ partial "list-posts.html" .Pages }}
+{{ end }}
+</ul>

@@ -1,7 +1,0 @@
----
-layout: null
----
-
-<h2>Pages with category <span class="subheader"><%= @document.categoryName %></span>:</h2>
-
-<%- @partial('posts', {data: @getFiles(categories: $has: @document.categoryName)}) %>

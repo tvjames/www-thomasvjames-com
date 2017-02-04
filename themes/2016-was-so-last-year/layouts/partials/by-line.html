@@ -1,0 +1,15 @@
+{{ $date :=  .Date }}
+{{ $archive := "archive" }}
+{{ $url := delimit (slice ($date.Format "2006/01")) "/" | print $.Site.BaseURL }}
+
+<a href="{{ $url }}">
+    <time itemprop="datePublished" pubdate="pubdate" datetime="{{ $date.Format "2006/01" }}" title="{{ $date.Format $.Site.Params.fmt.ISO8601 }}">
+        {{ with $.Site.Params.fmt.PostDate }}{{ $date.Format . }}{{ else }}{{ $date.Format "Mon, Jan 2, 2006 (-07:00)" }}{{ end }}
+    </time>
+</a>
+
+{{ with (.Scratch.Get "Author") }}
+{{ $url := slice $.Site.BaseURL "author" .id }}
+by 
+<a href="{{ delimit $url "/" }}" title="Posts by {{ .name }}" rel="author">{{ .name }}</a>
+{{ end }}

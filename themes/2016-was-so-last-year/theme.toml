@@ -1,0 +1,12 @@
+name = "2016 Was So Last Year"
+license = "Apache 2.0"
+licenselink = "https://github.com/tvjames/www-thomasvjames-com/blob/master/themes/2016-was-so-last-year/LICENSE.md"
+description = ""
+homepage = "http://thomasvjames.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.18
+
+[author]
+  name = "Thomas James"
+  homepage = "http://thomasvjames.com"

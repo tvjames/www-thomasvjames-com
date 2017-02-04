@@ -1,0 +1,10 @@
+{{ with (.Scratch.Get "breadcrumbs" | default .Params.breadcrumbs) }}
+  <ul class="breadcrumbs">
+    {{ range . }}
+      <li class="{{ with .current }}current{{ end }}">
+        <a href="{{ .link }}">{{ .title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+&nbsp;
+{{ end }}

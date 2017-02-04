@@ -1,0 +1,9 @@
+{{ range first 5 (where .Site.Pages.ByDate.Reverse "Section" "post") }}
+          
+{{ partial "author.html" . }}
+<article>
+  {{ partial "post-header.html" . }}
+  {{ partial "post-content.html" . }}
+  {{ partial "post-footer.html" . }}
+</article>
+{{ end }}
