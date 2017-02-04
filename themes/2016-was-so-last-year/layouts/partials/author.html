@@ -1,0 +1,7 @@
+{{ $author := or .Params.author .Site.Params.contentAuthor }}
+{{ .Scratch.Set "Author" nil }}
+{{ if $author }}
+  {{ $authorDetail := index $.Site.Params.authors $author }}
+  {{ .Scratch.Set "Author" $authorDetail }}
+{{ end }}
+<!-- Author: {{ $author }} -->

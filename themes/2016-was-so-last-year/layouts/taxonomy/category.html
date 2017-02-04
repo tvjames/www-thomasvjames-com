@@ -9,12 +9,22 @@
     {{ partial "layout-header.html" . }}
     {{ partial "layout-navigation.html" . }}
 
+    {{ $link := .Data.Plural | print "/" | urlize }}
+    {{ $n1 := dict "title" .Data.Plural "link" $link }}
+    {{ $n2 := dict "title" .Title "link" (.Title | urlize | print $link "/") "current" true }}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1 $n2) }}
+
     <div class="row main">
       <div class="large-12 columns">
 
         <div class="row">
           <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            <h2>Pages with <a href="/{{ .Data.Plural | urlize }}">category</a> <span class="subheader">{{ .Title }}</span>:</h2>
+
             {{ .Content }}
+
+            {{ partial "posts-by-year.html" .Data.Pages }}
           </div>
           <div class="large-3 columns">
             {{ partial "sidebar.html" . }}

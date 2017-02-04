@@ -1,0 +1,39 @@
+<div class="row nav">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="contain-to-grid sticky ">
+        <nav class="top-bar" data-topbar data-options="sticky_on: large">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="{{ $.Site.BaseURL }}">Home</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+              {{ $permalink := $.Permalink }}
+              {{ range where $.Site.Pages.ByTitle "Section" "page" }}
+                  <li class="{{ if eq .Permalink $permalink }}active{{ else }}inactive{{ end }}">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </li>
+              {{ end }}
+            </ul>
+            <ul class="title-area right">
+              <li><a href="https://twitter.com/thomasvjames"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://github.com/tvjames"><i class="fa fa-github"></i></a></li>
+              <li class="name">
+                <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+              </li>
+            </ul>
+
+
+
+          </section>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,65 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    {{ .Hugo.Generator }}
+    {{ partial "html-head-meta.html" . }}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
-
-    <title>{{ .Title }}</title>
-    <meta property='og:title' content="{{ .Title }}">
-    <meta property="og:type" content="website">
-    
-    <meta property="og:url" content="{{ .Permalink }}">
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
-    
   </head>
-
   <body>
+    {{ partial "layout-header.html" . }}
+    {{ partial "layout-navigation.html" . }}
 
-    <header class="site">
-      <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
-    </header>
+    {{ $link := .Data.Plural | print "/" | urlize }}
+    {{ $n1 := dict "title" "Archive" "link" "/archive" }}
+    {{ $n2 := dict "title" .Data.Plural "link" $link }}
+    {{ $n3 := dict "title" .Title "link" (.Title | urlize | print $link "/") "current" true }}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1 $n2 $n3) }}
 
-    <div class="container site">
+    <div class="row main">
+      <div class="large-12 columns">
 
-        <div class="list">
-          <div class="row">
-            <div class="col-sm-9">
+        <div class="row">
+          <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            <h2>{{ .Data.Singular }} {{ .Title }}</h2>
 
-              <header class="title"><h1>{{ .Title }}</h1></header>
+            {{ .Content }}
 
-              <div class="articles">
-                <div class="row">
-                  {{ range (.Paginate .Data.Pages).Pages }}
-                  <div class="col-sm-4">
-                    {{ .Render "li" }}
-                  </div>
-                  {{ end }}
-                </div>
-              </div>
-
-              {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-              <nav class="paging">
-                {{ if .Paginator.HasPrev }}
-                <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}" class="left" rel="prev">PREV</a>
-                {{ end }}
-
-                {{ if .Paginator.HasNext }}
-                <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}" class="right" rel="next">NEXT</a>
-                {{ end }}
-              </nav>
-              {{ end }}
-
-            </div>
-
-            
+            {{ partial "posts.html" .Data.Pages }}
+          </div>
+          <div class="large-3 columns">
+            {{ partial "sidebar.html" . }}
           </div>
         </div>
+        <hr />
 
-
+      </div>
     </div>
 
+    {{ partial "layout-footer.html" . }}
+    {{ partial "layout-script.html" . }}
   </body>
 </html>

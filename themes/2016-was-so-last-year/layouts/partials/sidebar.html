@@ -1,0 +1,33 @@
+<section>
+  <ul class="small-block-grid-1">
+    <li>
+    <a href="http://stackexchange.com/users/8683affb512d4853afd662a6ea976454">
+      <img class="th stackexchange" style="margin-left: 0;" src="http://stackexchange.com/users/flair/8683affb512d4853afd662a6ea976454.png" width="208" height="58" alt="profile for Thomas James on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Thomas James on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+    </a>
+  </li></ul>
+</section>
+
+{{ with $.Site.Params.sections }}{{ partial "sidebar-sections.html" . }}{{ end }}
+{{ with $.Params.sections }}{{ partial "sidebar-sections.html" . }}{{ end }}
+
+{{ with $.Site.Taxonomies.tags }}
+<section class="tag-cloud">
+  <p>
+    {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" data-tag-count="{{ $taxonomy.Count }}" data-tag-weight="{{ $taxonomy.Count }}">
+        {{ $name }} 
+      </a>
+    {{ end }}
+  </p>
+</section>
+{{ end }}
+
+{{ with $.Site.Author.social }}
+{{ with .twitter }}
+<section class="twitter">
+  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/{{ . }}" data-widget-id="480610446861275136">Tweets by @{{ . }}</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+</section>
+{{ end }}
+{{ end }}

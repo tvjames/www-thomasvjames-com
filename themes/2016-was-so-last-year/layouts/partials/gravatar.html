@@ -1,0 +1,1 @@
+<img alt="{{ .name }} via Gravatar" src="https://www.gravatar.com/avatar/{{ md5 .email | lower }}?{{ delimit (slice "s=50" "d=retro" "rating=X") "&" }}" class="avatar avatar-50 photo" height="50" width="50">

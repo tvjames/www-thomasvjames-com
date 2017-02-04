@@ -1,0 +1,12 @@
+<header class="clearfix">
+  {{ with (.Scratch.Get "Author") }}
+  <aside class="right">
+    <div class="pic">{{ partial "gravatar.html" . }}</div>
+  </aside>
+  {{ end }}
+  <h3>
+    <a href="{{ .Permalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+    <small>{{ partial "edit-on-github.html" . }}</small>
+  </h3>
+  <small>{{ partial "by-line.html" . }}</small>
+</header>

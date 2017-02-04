@@ -9,12 +9,35 @@
     {{ partial "layout-header.html" . }}
     {{ partial "layout-navigation.html" . }}
 
+    {{ $link := .Data.Plural | print "/" | urlize }}
+    {{ $n1 := dict "title" "Archive" "link" "/archive" }}
+    {{ $n2 := dict "title" .Data.Plural "link" $link "current" true}}
+    {{ .Scratch.Set "breadcrumbs" (slice $n1 $n2) }}
+
     <div class="row main">
       <div class="large-12 columns">
 
         <div class="row">
           <div class="large-9 columns">
+            <div class="right">{{ partial "breadcrumbs.html" . }}</div>
+            <h2>{{ .Title }}</h2>
+            
             {{ .Content }}
+
+<ul class="side-nav">
+  {{ $data := .Data }}
+  {{ range $key, $value := .Data.Terms }}
+    <li>
+      <a href="/{{ $data.Plural }}/{{ $key | urlize }}" title="{{ $key }}">
+        <span class="secondary radius label right">
+          {{ len $value }}
+        </span>
+        {{ $key }}
+      </a>
+    </li>
+  {{ end }}
+</ul>
+
           </div>
           <div class="large-3 columns">
             {{ partial "sidebar.html" . }}

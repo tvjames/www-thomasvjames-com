@@ -1,0 +1,13 @@
+{{ partial "author.html" . }}
+<article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+  {{ partial "post-metadata.html" . }}
+  {{ with .Params.image }}
+  <div class="image" style="background-image: url({{ $.Site.BaseURL }}{{ . }});"></div>
+  {{ end }}
+  {{ partial "post-header.html" . }}
+  {{ partial "post-content.html" . }}
+  {{ partial "post-footer.html" . }}
+
+  {{ template "_internal/disqus.html" . }}
+</article>
+

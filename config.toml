@@ -2,7 +2,74 @@ languageCode = "en-us"
 title = "thomasvjames.com"
 baseurl = "http://www.thomasvjames.com"
 theme = "2016-was-so-last-year"
+disqusShortname = "www-thomasvjames-com"
+googleAnalytics = "UA-95216-1"
+enableGitInfo = true
+
+[permalinks]
+  post = "/:year/:month/:title"
+  page = "/:slug"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+  archive = "archive"
+  2010 = "2010"
+  2011 = "2011"
+  2012 = "2012"
+  2013 = "2013"
+  2014 = "2014"
+  2015 = "2015"
+  2016 = "2016"
+  2017 = "2017"
+
+# Site Author -- for footer
+[author]
+  name = "author person"
+  email = "someone@exmaple.org"
+[author.social]
+  twitter = "thomasvjames"
+  github = "tvjames"
+
+# ---------------------------------------------------------------------------- #
+
+[params]
+  contentAuthor = "tvjames"
+
+[params.repo]
+  name = "tvjames/www-thomasvjames-com"
+  url = "https://github.com/tvjames/www-thomasvjames-com"
+
+[params.fmt]
+  ISO8601 = "2006-01-02T15:04:05-07:00"
+  PostDate = "Mon, Jan 2, 2006 15:04 (-07:00)"
+  FullDate = "January 2nd 2006"
+
+[params.authors]
+[params.authors.tvjames]
+  id = "tvjames"
+  name = "Thomas James"
+  email = "thomasvjames@gmail.com"
+
+[[params.sections]]
+title = "Links"
+[[params.sections.links]]
+text = "Tom Likes Stuff"
+alt = "Tom Likes Stuff"
+href = "https://www.tomlikesstuff.com/"
+[[params.sections.links]]
+text = "Photography"
+alt = "Photography"
+href = "http://photography-of.thomasvjames.com"
+
+
+
+
+
+
+
+
+
+
+
+

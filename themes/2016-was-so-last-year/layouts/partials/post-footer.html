@@ -1,0 +1,28 @@
+<footer>
+  {{ with .Params.categories }}
+    <section class="categories postmetadata">
+      
+        <ul class="inline-list">
+          <li class="heading"><small>Categories: </small></li>
+          {{ range . }}
+          <li><small><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" rel="category">{{ . }}</a></small></li>
+          {{ end }}
+        </ul>
+      
+    </section>
+  {{ end }}
+
+  {{ with .Params.tags }}
+    <section class="tags postmetadata">
+      
+        <ul class="inline-list">
+          <li class="heading"><small>Tags: </small></li>
+          {{ range . }}
+          <li><small><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }}</a></small></li>
+          {{ end }}
+        </ul>
+      
+    </section>
+  {{ end }}
+
+</footer>

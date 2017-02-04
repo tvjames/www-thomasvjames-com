@@ -10,6 +10,8 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
 ---
 
 This is my take on the [JooJoo](https://thejoojoo.com/) web tablet from the perspective of a geek that pre-ordered one on the first day (December 12th 2009) and waited the agonising months to April this year to be able to actually hold it in his hands.

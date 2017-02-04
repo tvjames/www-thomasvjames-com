@@ -1,0 +1,14 @@
+<script type="text/javascript" src="/js/vendor/jquery.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.tagcloud.js"></script>
+<script type="text/javascript" src="/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+  $.fn.tagcloud.defaults = {
+    size: {start: 8, end: 22, unit: 'pt'},
+    color: {start: '#008cba', end: '#546CFF'}
+  };
+  $(function () {
+    $('section.tag-cloud a').tagcloud();
+  });
+</script>
+{{ template "_internal/google_analytics_async.html" . }}

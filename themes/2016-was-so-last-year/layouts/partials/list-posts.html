@@ -1,0 +1,11 @@
+{{ range . }}
+  {{ $date := .Date }}
+  <li>
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
+      <span class="secondary radius label right">
+      {{ $date.Format ("January 2nd 2006") }}
+      </span>
+      {{ .Title }}
+    </a>
+  </li>
+{{ end }}

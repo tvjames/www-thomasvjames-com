@@ -1,0 +1,9 @@
+# Legacy photography site
+/photography                http://photography-of.thomasvjames.com
+
+# Docpad migration 
+/tag/*                      /tags/:splat
+/category/*                 /categories/:splat
+
+# Makin it work
+/archive/*                  /:splat
