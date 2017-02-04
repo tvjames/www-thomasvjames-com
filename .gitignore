@@ -27,3 +27,4 @@ node_modules
 # Custom
 out/
 private/
+public/
