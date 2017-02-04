@@ -6,6 +6,10 @@ layout: post
 slug: virgin-australias-velocity-global-wallet-getting-activated-a-tale-of-woe
 title: Virgin Australia's Velocity Global Wallet - Getting activated, a tale of woe
 wordpress_id: 299
+archive: 
+- 2013
+2013:
+- '09'
 ---
 
 I'm a regular Virgin Australia flyer, a Velocity member as well, when they announced the upgraded Global Wallet membership cards I was quite excited to try it out. The fees are comparable to some of the competition, the exchange rates will be another story. I've used the travelex cards a number of times in the past, but having to either order online and pickup at the post office or go in person to get one can sometimes be inconvenient (especially on short notice travel). So the Velocity Global Wallet sounded pretty good, it would always be there, all I had to do was put funds into it. Easy.

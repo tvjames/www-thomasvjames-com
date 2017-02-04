@@ -13,6 +13,10 @@ tags:
 - coding
 - deployfu
 - mono
+archive: 
+- 2011
+2011:
+- '10'
 ---
 
 Its been some time since I built [unwind](http://srvd.in/) as a project to learn about interacting with [CouchDB](http://couchdb.apache.org/) from .net as well as getting some experience in running .net on mono. It was an excellent sample application as well for testing out [DeployFU](http://www.deployfu.com/) & [App Harbour](https://appharbor.com/) which it still remains today.

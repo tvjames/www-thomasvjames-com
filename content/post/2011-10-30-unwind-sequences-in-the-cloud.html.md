@@ -10,6 +10,10 @@ categories:
 - Development
 tags:
 - coding
+archive: 
+- 2011
+2011:
+- '10'
 ---
 
 When starting to build the url shortener, the first thing i did was research how others had solved the problem before me. This research turned up a lot of the same thing, a simple database where the autonumber/identity column auto generated value was then used as the link id and turned into something non-numeric like [base62](http://birdhouse.org/blog/2010/10/24/base62-urls-django/) for display to the user.

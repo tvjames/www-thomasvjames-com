@@ -12,6 +12,10 @@ tags:
 - apple
 - coding
 - macbook air
+archive: 
+- 2011
+2011:
+- '02'
 ---
 
 With the intention of getting some casual development done on the MBA I set forth to install the needed tools. As i'm mainly a C# .net sort of developer so i set about installing the latest [mono release 2.10](http://www.mono-project.com/) which includes an impressive array of bundled tools (C#, F#, IronPython & IronRuby). MonoDevelop was then next on the list.

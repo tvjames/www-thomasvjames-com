@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "thomasvjames.com"
-baseurl = "http://www.thomasvjames.com"
+baseurl = "http://www.thomasvjames.com/"
 theme = "2016-was-so-last-year"
 disqusShortname = "www-thomasvjames-com"
 googleAnalytics = "UA-95216-1"
@@ -25,8 +25,8 @@ enableGitInfo = true
 
 # Site Author -- for footer
 [author]
-  name = "author person"
-  email = "someone@exmaple.org"
+  name = "Thomas James"
+  email = "thomasvjames@gmail.com"
 [author.social]
   twitter = "thomasvjames"
   github = "tvjames"

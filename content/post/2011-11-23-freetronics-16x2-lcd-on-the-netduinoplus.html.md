@@ -6,6 +6,10 @@ layout: post
 slug: freetronics-16x2-lcd-on-the-netduinoplus
 title: Freetronics 16x2 LCD on the NetduinoPlus
 wordpress_id: 216
+archive: 
+- 2011
+2011:
+- '11'
 ---
 
 Since I got my netduino, and shortly after the netduino plus, I've been dying to get a few accessories to play with. Making the on-board LED flash isn't the most exciting thing in the world. So when [Little Bird Electronics](), the guys i bought the netduino from, advertised a one day 20% all freetronics gear sale i jumped on the chance to grab a few accessories and with next day express shipping for $8 it was a no-brainer.

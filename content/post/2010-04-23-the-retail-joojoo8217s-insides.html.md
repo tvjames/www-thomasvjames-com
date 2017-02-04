@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '04'
 ---
 
 [![20100423002.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423002_zpsd7180f2d.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423002_zpsd7180f2d.jpg.html "photo 20100423002_zpsd7180f2d.jpg")

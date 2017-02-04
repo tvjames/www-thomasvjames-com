@@ -6,6 +6,10 @@ layout: post
 slug: getting-newrelic-monitoring-working-on-mono-net-web-apps
 title: Getting NewRelic monitoring working on Mono .Net Web Apps
 wordpress_id: 253
+archive: 
+- 2012
+2012:
+- '07'
 ---
 
 About a week ago I set out attempting to get [NewRelic](https://newrelic.com)'s .Net Application instrumentation working on for web apps running on the Mono .Net runtime. I've been using NewRelic's Lite plan for monitoring a number of workpress blogs I host for friends and the various VPSes I have around the world. I've always wanted to extend this monitoring to the asp.net mcv apps I have running, but as I host them on Linux with Mono this was completely unsupported and a few google searched on the topic yielded little help. With access to a standard plan it was time see if it was possible.

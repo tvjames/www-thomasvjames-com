@@ -11,6 +11,10 @@ categories:
 tags:
 - coding
 - rant
+archive: 
+- 2011
+2011:
+- '03'
 ---
 
 This is a rant about people asking questions on a particular subject when a quick google search of the subject would have yielded the answer.

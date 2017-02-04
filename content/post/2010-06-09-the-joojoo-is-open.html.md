@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '06'
 ---
 
 The geniuses over at http://www.thejoojooforum.com/ and in specific HighJinx have figured out a way to boot from an alternative boot source.

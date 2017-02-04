@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '05'
 ---
 
 With a bit of digging it appears that the JooJoo is running Compiz Fusion as its window manager. With a bit of searching a number of sources are available for the list of keyboard shortcuts that might be available on the JooJoo and with those some hope of getting low level access.

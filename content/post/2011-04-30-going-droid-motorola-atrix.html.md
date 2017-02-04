@@ -11,6 +11,10 @@ categories:
 tags:
 - android
 - atrix
+archive: 
+- 2011
+2011:
+- '04'
 ---
 
 Some time ago I decided it was time to jump on the Android boat. I've just been waiting for the right device to come along for a geek like me and i think that device is the [Motorola Atrix 4G](http://www.motorola.com/Consumers/US-EN/Consumer-Product-and-Services/Mobile-Phones/Motorola-ATRIX-US-EN) which i've had to buy through [Smooth Mobiles](http://www.smoothmobiles.com.au) as it isn't yet available in Australia and even when it is, it'll be released through a carrier that I'm not with, so i wont be able to get it on contract.

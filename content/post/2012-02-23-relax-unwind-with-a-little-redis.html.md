@@ -6,6 +6,10 @@ layout: post
 slug: relax-unwind-with-a-little-redis
 title: Relax & Unwind with a little Redis
 wordpress_id: 222
+archive: 
+- 2012
+2012:
+- '02'
 ---
 
 In a previous post, [Unwind: Sequences in the cloud](http://www.thomasvjames.com/2011/10/unwind-sequences-in-the-cloud/), I wrote about one of the challenges of moving from the relational database world to the non-relational database world. The issue of generating numerical sequences.

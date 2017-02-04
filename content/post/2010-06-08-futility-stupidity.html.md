@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '06'
 ---
 
 I've come to realise my mistake. The usb header on the JooJoo's SSD is not meant for accessing the content of the flash drive but rather for providing a USB HOST port for the USB line provided by the mini-pcie port.

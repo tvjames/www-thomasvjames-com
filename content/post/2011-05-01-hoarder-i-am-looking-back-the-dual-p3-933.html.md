@@ -10,6 +10,10 @@ categories:
 - Technology
 tags:
 - reflection
+archive: 
+- 2011
+2011:
+- '05'
 ---
 
 Writing the last post got me thinking about my past, I realised that only last month did I finally throw away the Dual P3-933 system. It's been with me for most of my Adult life.

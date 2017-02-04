@@ -10,6 +10,10 @@ categories:
 - Development
 tags:
 - ravendb
+archive: 
+- 2012
+2012:
+- '10'
 ---
 
 > Note: this applies to build 2139 and above of RavenDB

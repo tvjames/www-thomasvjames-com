@@ -11,6 +11,10 @@ tags:
 - pcengines-apu
 - linux
 - router
+archive: 
+- 2014
+2014:
+- '09'
 ---
 
 I've not been much of a fan of off-the-shelf home routers for a long while now. Always opting to build a linux box of some sort to do the job, going back this used to be the old white box with a couple of network cards, and until recently it was a [DreamPlug](https://www.globalscaletechnologies.com/t-dreamplugdetails.aspx) plug-pc. The DreamPlug was starting to have some power issues, so it was best to pro-actively replace it. 

@@ -14,6 +14,10 @@ tags:
 - deployfu
 - moncai
 - mono
+archive: 
+- 2011
+2011:
+- '02'
 ---
 
 I've been looking forward to [moncai](http://www.moncai.com/) since its announcement back in November 2010. Its being developed by the guys at SineSignal and looks to be pretty promising.

@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '04'
 ---
 
 One of the JooJoo owners emailed is now compiling the replies from others. Check it out;

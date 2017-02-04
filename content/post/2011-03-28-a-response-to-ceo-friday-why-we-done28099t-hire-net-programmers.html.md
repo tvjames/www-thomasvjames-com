@@ -10,6 +10,10 @@ categories:
 - Professional
 tags:
 - rant
+archive: 
+- 2011
+2011:
+- '03'
 ---
 
 In response to [CEO Friday: Why we don’t hire .NET programmers](http://blog.expensify.com/2011/03/25/ceo-friday-why-we-dont-hire-net-programmers/).

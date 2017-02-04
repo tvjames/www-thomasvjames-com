@@ -10,6 +10,10 @@ categories:
 tags:
 - 4g
 - wifi
+archive: 
+- 2015
+2015:
+- '11'
 ---
 
 Having recently received my kickstarted GLocalMe G2 Global Roaming device & with a few past devices just sitting around I thought I'd put them to the test. In a completely non-scientific way.

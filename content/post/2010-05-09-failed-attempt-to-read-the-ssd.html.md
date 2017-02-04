@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '05'
 ---
 
 Some time ago I ordered the [SSDMA](http://www.hwtools.net/Adapter/SSDMA.html) which is a mini PCIe (SATA/PATA) to USB adapter, This item arrived about two weeks ago but because of an out-of-state trip I havent been able to write up my results yet.

@@ -10,6 +10,10 @@ categories:
 tags:
 - ubuntu
 - ec2
+archive: 
+- 2015
+2015:
+- '03'
 ---
 
 _Note, this is based on experience in ap-southeast-2 only, using Ubuntu Cloud AMIs_

@@ -12,6 +12,10 @@ tags:
 - opinion
 - rant
 - singapore
+archive: 
+- 2011
+2011:
+- '11'
 ---
 
 This post is in response to reading [Little rest for Singapore's silent army](http://edition.cnn.com/2011/10/30/world/asia/little-rest-for-singapores-silent-army/index.html?&hpt=hp_c2&t=1320033726) and then finding out about this [maid employer's blog](http://singaporemaid.blogspot.com/2010/05/misconceptions-about-maids.html?t=1320033876).

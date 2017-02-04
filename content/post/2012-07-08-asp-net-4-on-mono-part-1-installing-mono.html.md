@@ -6,6 +6,10 @@ layout: post
 slug: asp-net-4-on-mono-part-1-installing-mono
 title: ASP.net 4 on Mono - Part 1 - Installing Mono
 wordpress_id: 244
+archive: 
+- 2012
+2012:
+- '07'
 ---
 
 Today I found myself attempting to automate the process of getting the latest mono build running on debian and serving up a web app with some degree of fault resistance.

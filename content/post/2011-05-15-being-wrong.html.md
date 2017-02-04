@@ -13,6 +13,10 @@ tags:
 - reflection
 - talks
 - travel
+archive: 
+- 2011
+2011:
+- '05'
 ---
 
 One of my favourite ways to spend my time on short flights between Brisbane and Melbourne, which I do monthly for work, is to catch up on the recent [TED talks](http://www.ted.com/).

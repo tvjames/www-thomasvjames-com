@@ -10,6 +10,10 @@ categories:
 - Development
 tags:
 - ravendb
+archive: 
+- 2012
+2012:
+- '10'
 ---
 
 _Build 960 was used as the basis for the post and is my first opportunity to use RavenDB in a non-trivial way_

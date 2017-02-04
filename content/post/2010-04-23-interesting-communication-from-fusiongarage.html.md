@@ -10,6 +10,10 @@ categories:
 - JooJoo
 tags:
 - joojoo
+archive: 
+- 2010
+2010:
+- '04'
 ---
 
 Logging into my hotmail account to get the details of the sellers for the previous post I checked my Junk Mail folder, as I have my hotmail account's junk mail setting to only allow whitelisted senders, everything else ends up in the junk mail.

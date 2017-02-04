@@ -12,6 +12,10 @@ tags:
 - fusion garage
 - Grid10
 - joojoo
+archive: 
+- 2011
+2011:
+- '10'
 ---
 
 Firstly I need to thank [fusionGarage](http://fusiongarage.com/) for sending me out a [Grid10](http://fusiongarage.com/grid-10/features) as a gift for being an original [JooJoo](http://www.thomasvjames.com/2011/04/the-joojoo-fusion-garage-one-year-on-apple-reigns-supreme/) customer, the experience wasn't painless as i never received the original offer email and their initial customer service was reminiscent of their JooJoo days, however after a tweet about their customer service fG's media team got in contact with me and promptly sorted the issue out. Once my original JooJoo invoice details were confirmed the device was shipped and it arrived within a few days.

@@ -11,6 +11,10 @@ categories:
 tags:
 - linux
 - ubuntu
+archive: 
+- 2010
+2010:
+- '06'
 ---
 
 [![20100609005.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100609005_zps27deac89.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100609005_zps27deac89.jpg.html "photo 20100609005_zps27deac89.jpg")

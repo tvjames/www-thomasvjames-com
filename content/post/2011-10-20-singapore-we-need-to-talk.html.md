@@ -11,6 +11,10 @@ categories:
 tags:
 - opinion
 - rant
+archive: 
+- 2011
+2011:
+- '10'
 ---
 
 Singapore, you're my second home behind Australia, but as a regular visitor and a friend we need to talk. Don't get me wrong, you're a wonderful place to live and visit, being a mixing pot of cultures, food and an excellent hub to travel from but some things are starting to irk me and other travellers.

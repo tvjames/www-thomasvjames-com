@@ -11,6 +11,10 @@ categories:
 tags:
 - aws
 - vagrant
+archive: 
+- 2013
+2013:
+- '09'
 ---
 
 I've been using [vagrant](http://www.vagrantup.com/) & [vagrant-aws](https://github.com/mitchellh/vagrant-aws) quite a bit lately, it's great to be able to fire up a VM to test something out then fire it up on an EC2 instance to try it out in the cloud. Easy as hell when running on linux/osx but less than obvious when doing it on Windows. Everything vagrant-aws works out of the box, except rsync.

@@ -10,6 +10,10 @@ tags:
 - beer
 - homebrew
 - brew smith
+archive: 
+- 2015
+2015:
+- '02'
 ---
 
 While out shopping for a few things at [Biome in Paddington](http://www.biome.com.au/), we chanced upon the [Brew Smith](http://www.brewsmith.com.au/) home brew kits. On a whim I decided to get the [Hoppy Heart IPA kit](http://brewsmith.com.au/shop/hoppy-heart-ipa-kit/) ($80, it seems that biome put a $10 premium on them, the Brew Smith online store has them at $70) & an additional [Chocolate Paradise Porter ingredient mix](http://brewsmith.com.au/shop/refill-choc-paradise-porter/) ($28, again cheaper at Brew Smith - $20). All up $108, or $105 direct from Brew Smith including interstate shipping. Sorry Biome, but if the brews work out, I'll be ordering the refills online. 

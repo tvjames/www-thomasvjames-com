@@ -11,6 +11,10 @@ categories:
 tags:
 - coding
 - opinion
+archive: 
+- 2011
+2011:
+- '10'
 ---
 
 [Never, never, never use String in Java (or at least less often)](http://codemonkeyism.com/never-never-never-use-string-in-java-or-at-least-less-often/)

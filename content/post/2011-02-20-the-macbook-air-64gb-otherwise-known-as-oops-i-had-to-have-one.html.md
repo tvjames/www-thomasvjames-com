@@ -11,6 +11,10 @@ categories:
 tags:
 - apple
 - macbook air
+archive: 
+- 2011
+2011:
+- '02'
 ---
 
 I was looking for a way to justify getting a MacBook Air ever since the product was announced. The main reason being the weight, size, the ability to open a terminal session to my hosted env and being able to get some coding done.

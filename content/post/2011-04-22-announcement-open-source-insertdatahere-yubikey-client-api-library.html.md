@@ -14,6 +14,10 @@ tags:
 - mono
 - open source
 - yubikey
+archive: 
+- 2011
+2011:
+- '04'
 ---
 
 I've been interested in the [Yubikey](http://www.yubico.com/yubikey) for some time now, it's an interesting approach to the problem of two-factor authentication with a physical token that is a space normally owned by the big guys.

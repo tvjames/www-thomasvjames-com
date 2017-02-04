@@ -14,6 +14,10 @@ tags:
 - coding
 - deployfu
 - mono
+archive: 
+- 2011
+2011:
+- '03'
 ---
 
 A while ago i wrote a small asp.net mvc2 web app to try out [CouchDB](http://couchdb.apache.org/) as database platform. CouchDB is a little different from the regular database offerings in that it is known as a document database, widely known under the [NoSQL](http://nosql-database.org/) movement.

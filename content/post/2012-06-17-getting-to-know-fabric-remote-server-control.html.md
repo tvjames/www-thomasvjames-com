@@ -6,6 +6,10 @@ layout: post
 slug: getting-to-know-fabric-remote-server-control
 title: 'Getting to know Fabric: Remote server control'
 wordpress_id: 228
+archive: 
+- 2012
+2012:
+- '06'
 ---
 
 I use a number of cheap VPS instances to test out various platforms and tools. Sadly, as is the nature of the low end VPS market, not all of them are reliable which has led me to re-installing & customising quite a number of times.

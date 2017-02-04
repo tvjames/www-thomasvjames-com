@@ -12,6 +12,10 @@ tags:
 - apple
 - iPad
 - poor experience
+archive: 
+- 2011
+2011:
+- '04'
 ---
 
 After a short amount of hunting around at the local shopping centre, I was able to find a retailer that had stock of the 64Gb 3G iPad2. I gave in and bought the black leather smart cover as well.

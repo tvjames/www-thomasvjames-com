@@ -13,6 +13,10 @@ tags:
 - opinion
 - talks
 - unconference
+archive: 
+- 2011
+2011:
+- '11'
 ---
 
 Yesterday i attended [BarCamp Brisbane](http://www.meetup.com/barcampqld/) which was my first [un-conference](http://en.wikipedia.org/wiki/Unconference). I had read a little bit about the concept, where everyone that attends is meant to participate in some way. I hadn't planned to talk. It was rather daunting, turning up just before 10am not knowing anyone, not knowing what to expect and what kind of crowd would be there. I quickly realised this didn't matter, although a little latter there were a few familiar faces. Arriving at the same time as [@damovisa](http://twitter.com/#!/damovisa), we quickly struck up a conversation about the event and i learned he was the organiser of [Developer Developer Developer (DDD) Brisbane](http://www.dddbrisbane.com/), an event which I'm also attending next weekend.

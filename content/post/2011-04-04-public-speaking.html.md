@@ -12,6 +12,10 @@ tags:
 - professional
 - public speaking
 - talks
+archive: 
+- 2011
+2011:
+- '04'
 ---
 
 I've really never been good at public speaking, I'm not sure why. I suppose I could look back into my childhood years and find some event where i spoke and it didn't go well and attribute it to that, but its probably because, like most geeks, I'm **shy**, happy in my own skin, but still shy.

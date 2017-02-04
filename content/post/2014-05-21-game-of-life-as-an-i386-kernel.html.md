@@ -13,6 +13,10 @@ tags:
 - open source
 - linux
 - vagrant
+archive: 
+- 2014
+2014:
+- '05'
 ---
 
 I wrote this; [Game of life implemented as an i386 kernel](https://github.com/tvjames/kernel-mode-game-of-life).

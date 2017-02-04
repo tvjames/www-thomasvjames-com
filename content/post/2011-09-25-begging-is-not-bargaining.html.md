@@ -6,6 +6,10 @@ layout: post
 slug: begging-is-not-bargaining
 title: Begging is not Bargaining
 wordpress_id: 180
+archive: 
+- 2011
+2011:
+- '09'
 ---
 
 I've had my previous MacBook Air for sale up on Gumtree Brisbane now for a few weeks, a few days ago i lowered the price and bumped it up the list. This resulted in while a few enquiries, none more strange than the following. Punctuation is as it was received.

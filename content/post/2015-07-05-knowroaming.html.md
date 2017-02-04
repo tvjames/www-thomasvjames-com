@@ -10,6 +10,10 @@ categories:
 tags:
 - knowroaming
 - travel
+archive: 
+- 2015
+2015:
+- '07'
 ---
 
 On a recent trip to Frankfurt, Oslo & Singapore, rather than trying to buy local pre-paid SIM cards and working out what might be the best provider & pre-paid plan for each region, I thought my wife and I would try out [KnowRoaming](http://www.knowroaming.com/). 

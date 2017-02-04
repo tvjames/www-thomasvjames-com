@@ -12,6 +12,10 @@ tags:
 - apple
 - macbook air
 - opinion
+archive: 
+- 2011
+2011:
+- '08'
 ---
 
 So today I caved in, I bought a new MacBook Air 11" the Core i7 1.8Ghz 4Gb RAM 256Gb SSD model. I was going to custom build and get the 128Gb model but the 2 week build and shipping was just enough to send me into the Apple store at Chermside to buy the fully speced model. It was rather painless to buy from the Apple store but with the new process of having to "order a specialist" to attend to you just to buy was slightly troublesome, along with the 15 minute wait to be served. At least I wasnt clapped out of the store (thankfully the sales guy asked first). All this to replace my six month old first generation MacBook Air 11", Core2Duo 1.4Ghz 64Gb model.

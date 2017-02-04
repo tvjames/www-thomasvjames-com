@@ -12,6 +12,10 @@ tags:
 - hp-mini
 - linux
 - ubuntu
+archive: 
+- 2010
+2010:
+- '06'
 ---
 
 In other news I've bought a HP Mini Note 210 (1036VU) with a JB HiFi gift voucher I've needed to spend. I've figured it would made the most useful gadget addition to my home given the available options from JB.

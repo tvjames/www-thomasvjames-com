@@ -11,6 +11,10 @@ categories:
 tags:
 - macbook air
 - travel
+archive: 
+- 2011
+2011:
+- '03'
 ---
 
 A few weeks ago I decided for the work trip to Melbourne, I'd leave my MacBook Pro 17" and take the MacBook Air instead (along with the work gear of course). This experiment was as much about the technology as it was for and shall we call it technology separation anxiety. Could i do all the normal things i'd be doing on the work trip on the MBP with the MBA instead? Well as it turns out the answer is Yes. In fact a few things were even easier.

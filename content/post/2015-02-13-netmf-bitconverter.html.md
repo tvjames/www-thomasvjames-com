@@ -10,6 +10,10 @@ categories:
 tags:
 - netmf
 - netduino
+archive: 
+- 2015
+2015:
+- '02'
 ---
 
 The ```BitConverter``` was added to the .net microframework in version 4.3 and provides a way to turn an array of bytes into a meaningful primitive such as a ```long```. 

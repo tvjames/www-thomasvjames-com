@@ -12,6 +12,10 @@ tags:
 - fusion garage
 - joojoo
 - opinion
+archive: 
+- 2011
+2011:
+- '04'
 ---
 
 I remember back to the end of 2009 when the JooJoo pre-orders first became available, it was exciting times. A brand new linux based, full screen, capacative touch tablet was actually making its way to market, finally, given its rocky beginnings.

@@ -11,6 +11,10 @@ categories:
 tags:
 - windows
 - vagrant
+archive: 
+- 2013
+2013:
+- '09'
 ---
 
 Using puppet on windows, one thing has been missing for me, being able to iterate quickly with vagrant. There are a number of articles out there that detail a the steps required to create your own windows base box for vagrant, but unfortunately they're a whole bunch of manual steps, which doesn't gel too well with working with an automated environment. So this is my attempt to distil down the steps into as few manual ones as possible.

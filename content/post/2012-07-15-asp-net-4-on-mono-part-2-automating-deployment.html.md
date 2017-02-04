@@ -6,6 +6,10 @@ layout: post
 slug: asp-net-4-on-mono-part-2-automating-deployment
 title: ASP.net 4 on Mono – Part 2 – Automating deployment
 wordpress_id: 248
+archive: 
+- 2012
+2012:
+- '07'
 ---
 
 In [ASP.net 4 on Mono – Part 1 – Installing Mono](http://www.thomasvjames.com/2012/07/asp-net-4-on-mono-part-1-installing-mono/) I showed how mono could be downloaded, build and installed into a debian instance.
