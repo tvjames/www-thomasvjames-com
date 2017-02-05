@@ -16,6 +16,6 @@ archive:
 - '05'
 ---
 
-[![20100523003.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100523003_zpsb77917e6.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100523003_zpsb77917e6.jpg.html "photo 20100523003_zpsb77917e6.jpg")
+[![20100523003.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100523003_zpsb77917e6.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100523003_zpsb77917e6.jpg.html "photo 20100523003_zpsb77917e6.jpg")
 
 JooJoo board with the RAM removed

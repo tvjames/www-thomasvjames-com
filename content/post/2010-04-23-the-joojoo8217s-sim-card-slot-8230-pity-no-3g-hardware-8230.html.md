@@ -16,6 +16,6 @@ archive:
 - '04'
 ---
 
-[![20100423004.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423004_zps82515f7f.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423004_zps82515f7f.jpg.html "photo 20100423004_zps82515f7f.jpg")
+[![20100423004.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100423004_zps82515f7f.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423004_zps82515f7f.jpg.html "photo 20100423004_zps82515f7f.jpg")
 
 The JooJoo's SIM card slot … pity no 3G hardware … but its on its way.

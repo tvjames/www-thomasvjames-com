@@ -16,6 +16,6 @@ archive:
 - '04'
 ---
 
-[![20100423003.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423003_zpsa8f08c17.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423003_zpsa8f08c17.jpg.html "photo 20100423003_zpsa8f08c17.jpg")
+[![20100423003.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100423003_zpsa8f08c17.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423003_zpsa8f08c17.jpg.html "photo 20100423003_zpsa8f08c17.jpg")
 
 The JooJoo's SSD … Mini PCIe SATA 4G SSD from Silicon Power

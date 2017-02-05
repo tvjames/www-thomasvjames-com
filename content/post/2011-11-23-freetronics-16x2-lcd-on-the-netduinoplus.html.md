@@ -67,7 +67,7 @@ while (true)
 
 Running display:
 
-[![](http://i1370.photobucket.com/albums/ag258/thomasvjames/IMG_20111123_190923_zps2e755731.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_20111123_190923_zps2e755731.jpg.html "photo IMG_20111123_190923_zps2e755731.jpg")
+[![](//i1370.photobucket.com/albums/ag258/thomasvjames/IMG_20111123_190923_zps2e755731.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_20111123_190923_zps2e755731.jpg.html "photo IMG_20111123_190923_zps2e755731.jpg")
 
 References:
 

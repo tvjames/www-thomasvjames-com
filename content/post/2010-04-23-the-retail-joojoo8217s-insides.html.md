@@ -16,6 +16,6 @@ archive:
 - '04'
 ---
 
-[![20100423002.jpg](http://i1370.photobucket.com/albums/ag258/thomasvjames/20100423002_zpsd7180f2d.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423002_zpsd7180f2d.jpg.html "photo 20100423002_zpsd7180f2d.jpg")
+[![20100423002.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100423002_zpsd7180f2d.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100423002_zpsd7180f2d.jpg.html "photo 20100423002_zpsd7180f2d.jpg")
 
 The retail JooJoo's insides.
