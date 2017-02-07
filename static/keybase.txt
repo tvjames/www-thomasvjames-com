@@ -1,0 +1,69 @@
+https://keybase.io/thomasvjames
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://thomasvjames.com
+  * I am thomasvjames (https://keybase.io/thomasvjames) on keybase.
+  * I have a public key with fingerprint 679C 3A99 DEDC E761 AB79  60C2 435A D067 7AA5 5117
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.4.9"
+        },
+        "key": {
+            "fingerprint": "679c3a99dedce761ab7960c2435ad0677aa55117",
+            "host": "keybase.io",
+            "key_id": "435AD0677AA55117",
+            "uid": "374d111d8dfa8142d405976aab86fb00",
+            "username": "thomasvjames"
+        },
+        "merkle_root": {
+            "ctime": 1403864521,
+            "hash": "a10c17c092b964baa44446c97e5c505d3a2521d4312a5b7b4b8324411113fbc3093b254a166b7bb6d2a1700f96d329b2306ca7e686715ad826253c04e9d0e04c",
+            "seqno": 24139
+        },
+        "service": {
+            "hostname": "thomasvjames.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1403865228,
+    "expire_in": 157680000,
+    "prev": "b19f1f1533591f5f7f411b48db7bbb994bd814bb05f8ec6e61a63b1810054a1f",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - http://gpgtools.org
+
+owFtkruLFEEQxufWBygIXiAmgsdg5rL0u6cXBY9TMVUDwWTpR83u3O1O783MrZ7n
+RiZGq/gPaKChkSY+EsHMxMRYDA2MLhEfYPeyhx7YUXfXr76ur6ofHjuQtJbXbn7s
+33l29eTSh68muf78yoOd1Hi3nXZ3UjssoGzirtQjSLvpBmwbXUOn8Culd9BZr1cW
+TDudQFUXvgwU6rCOSqftiMfkvCj7UI2rImqlQipLtVIOnAUpsDZSCWQJo1w7JKTU
+mnOMZZAc+LrZ92o61+wVLtwGfvVi5FdX9/iteYBK5jDGLnO5zjAjjiGupNDaZCI3
+CEWwhmphqRn4ka4n6+FUx5pHUG0MoVd5PzdumyJimCGaCcYJDlXpehASNUYWS4sU
+MUowozULS1glgVuOuKOaBNwxionmRhpmMkoYC5VhmhtLkaKGcKaxECFqhCMaS4Ry
+JRwlyhCKhNUSRCYkDp3JiCCcWsRAOQSI2WCjhs3Sp13CMFXTeKwmhYVYduzcfwx2
+rB+FvHHlG2/9MEQHTTPuRt/N9hhehotbYHoLoZ4pShdm9+9wcUD39YQTkrVTuD0u
+KugVkeBSZCis+A5MgqTBKsc55pRyhXOeyzx0wbDMRd9GKWZcmJMxiOcZWAHhTwhq
+cIYRiv3J/zrloU7dD5J10S91s1VBOr1/+WCy3EoOH2rFz5scPXJ870e/PpM8vvR5
+9/SQPrq7+/7X99nbc79nr36cTZ68e7OGT/18sTQ7f+3epy/J0xPfLtz4Aw==
+=pW4w
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thomasvjames
+
+
