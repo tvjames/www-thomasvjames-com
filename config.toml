@@ -7,7 +7,7 @@ googleAnalytics = "UA-95216-1"
 enableGitInfo = true
 
 [permalinks]
-  post = "/:year/:month/:title"
+  post = "/:year/:month/:slug"
   page = "/:slug"
 
 [taxonomies]
