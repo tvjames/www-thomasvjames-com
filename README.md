@@ -1,5 +1,7 @@
 # thomasvjames.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bee5dec2-44a7-4eb9-bf3a-ab7dd4fd870f/deploy-status)](https://app.netlify.com/sites/thomasvjames-public-root/deploys) 
+
 Built with [hugo](https://gohugo.io/), previously [docpad](http://docpad.org/).
 
 Automatically built & hosted by [netlify](https://www.netlify.com/).
