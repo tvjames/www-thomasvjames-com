@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify --enableGitInfo"
+
+[build.environment]
+  HUGO_VERSION = "0.55.4"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --enableGitInfo --baseURL $DEPLOY_PRIME_URL"
