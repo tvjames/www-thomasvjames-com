@@ -6,4 +6,7 @@
   HUGO_VERSION = "0.55.4"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --enableGitInfo --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --enableGitInfo --baseURL $DEPLOY_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify --enableGitInfo --buildDrafts --buildFuture --baseURL $DEPLOY_URL"
