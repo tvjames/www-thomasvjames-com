@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "thomasvjames.com"
-baseurl = "http://www.thomasvjames.com/"
+baseurl = "https://www.thomasvjames.com/"
 theme = "2016-was-so-last-year"
 disqusShortname = "www-thomasvjames-com"
 googleAnalytics = "UA-95216-1"
