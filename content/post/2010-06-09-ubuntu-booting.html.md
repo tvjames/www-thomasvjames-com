@@ -17,7 +17,7 @@ archive:
 - '06'
 ---
 
-[![20100609005.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100609005_zps27deac89.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100609005_zps27deac89.jpg.html "photo 20100609005_zps27deac89.jpg")
+[![20100609005.jpg](/content/posts/images/20100609005_zps27deac89.jpg)](/content/posts/images/20100609005_zps27deac89.jpg "photo 20100609005_zps27deac89.jpg")
 
 Ubuntu booting.
 

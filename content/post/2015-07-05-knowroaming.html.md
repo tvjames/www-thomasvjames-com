@@ -32,17 +32,17 @@ I also signed up for the "ReachMe" service, which provisions a number in your ho
 
 The rest of KnowRoaming worked flawlessly after some initial issues when I arrived in Singapore. I was able to get on the network, make calls & send text, but was unable to activate the data pack I purchased. This turned out to be a backend issue that KnowRoaming support were able to address very quickly. I did have to turn to support a number of times during the trip, each time the ticket was answered within 15 minutes and the problem solved quickly after. The support staff (via email) were knowledgeable and it in no-way felt like the usual less-than-great support experience at your local telco. 
 
-[![Frankfurt am Main](//i1370.photobucket.com/albums/ag258/thomasvjames/IMG_3433_zpsysnv22jw.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_3433_zpsysnv22jw.jpg.html)
+[![Frankfurt am Main](/content/posts/images/IMG_3433_zpsysnv22jw.jpg)](/content/posts/images/IMG_3433_zpsysnv22jw.jpg)
 
 Unfortunately there was an issue with the partner network in Norway that meant that data (3G or otherwise) was unavailable for the week we were there. This was a bummer, but not the end of the world as pretty much everywhere in Oslo has free wifi. Once it was resolved, KnowRoaming pro-actively reached out to let us know that service was restored, we just needed to perform a configuration change and reboot the phone for access to data. 
 
-[![Oslo Harbour](//i1370.photobucket.com/albums/ag258/thomasvjames/IMG_3508_zpspav2qliu.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_3508_zpspav2qliu.jpg.html)
+[![Oslo Harbour](/content/posts/images/IMG_3508_zpspav2qliu.jpg)](/content/posts/images/IMG_3508_zpspav2qliu.jpg)
 
 The "unlimited" per-day data plans were useful, especially being able to activate a plan in Frankfurt and have the plan continue while in Norway (in-theory). The per-day charge does seem a little expensive for a longer trip, it would be nice if an alternative per-GB plan was available, or bulk discounts for longer periods. Depending on where you're going it might be cheaper to look at services like GlobalGig, not having to keep a dongle charged and running is certainly convenient. I also found that tethering worked in some countries (Norway & Germany) but not others (Singapore), I can only assume this is a per-network limitation or a limitation of the roaming agreement. 
 
 That said, for somewhere like Singapore the $7.99 per day is far cheaper and easier than GlobalGig's $50 for 1GB. 
 
-[![Singapore Supertrees](//i1370.photobucket.com/albums/ag258/thomasvjames/IMG_3750_zps5zbvfttf.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_3750_zps5zbvfttf.jpg.html)
+[![Singapore Supertrees](/content/posts/images/IMG_3750_zps5zbvfttf.jpg)](/content/posts/images/IMG_3750_zps5zbvfttf.jpg)
 
 Overall I was very happy with the product, it delivered it's promises & the customer service from KnowRoaming was excellent. It made it very easy to keep in contact with others regardless of the country we were and without costing a fortune in roaming fees. I'll be using it again on my next trip overseas. 
 

@@ -16,6 +16,6 @@ archive:
 - '05'
 ---
 
-[![20100523002.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100523002_zps7a3b22af.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100523002_zps7a3b22af.jpg.html "photo 20100523002_zps7a3b22af.jpg")
+[![20100523002.jpg](/content/posts/images/20100523002_zps7a3b22af.jpg)](/content/posts/images/20100523002_zps7a3b22af.jpg "photo 20100523002_zps7a3b22af.jpg")
 
 The underside of the JooJoo board.

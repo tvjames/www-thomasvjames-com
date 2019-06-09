@@ -17,6 +17,6 @@ archive:
 - '06'
 ---
 
-[![20100609004.jpg](//i1370.photobucket.com/albums/ag258/thomasvjames/20100609004_zpsea11116a.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/20100609004_zpsea11116a.jpg.html "photo 20100609004_zpsea11116a.jpg")
+[![20100609004.jpg](/content/posts/images/20100609004_zpsea11116a.jpg)](/content/posts/images/20100609004_zpsea11116a.jpg "photo 20100609004_zpsea11116a.jpg")
 
 The ubuntu netbook remix boot menu
