@@ -25,7 +25,7 @@ A colleague suggested I take a look at the [PC Engines ALIX](http://www.pcengine
 
 At the heart of the APU is a low power AMD x86/x64 cpu, unlike the DreamPlug which was ARM based. This means that all the regular linux distrobutions will be suitable without needing anythign to specifically target the device. I chose to use Debain. 
 
-[![Internal view of the APU board](//i1370.photobucket.com/albums/ag258/thomasvjames/IMG_1938_zps756bb972.jpg)](http://s1370.photobucket.com/user/thomasvjames/media/IMG_1938_zps756bb972.jpg.html)
+[![Internal view of the APU board](/content/posts/images/IMG_1938_zps756bb972.jpg)](/content/posts/images/IMG_1938_zps756bb972.jpg)
 
 > Shown left to right, GSM Mini-PCIe, Wifi & 16GB SSD (mSata). There is also a SIM card slot on the underside of the SD card reader, wired up to one of mini-pcie slots. 
 
